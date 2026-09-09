@@ -314,7 +314,7 @@ SchoolStatus Connect currently combines mass notifications, two-way messaging, a
 
 *Virtual meeting rooms, video classrooms, and document sharing tools for parents and teachers, sorted by GitHub star count (descending).*
 
-| 📦 Platform | 🌟 GitHub Stars | 🎯 Main Educational Use Case |
+| 📦 Platform | 🌟 GitHub_Stars | 🎯 Main Educational Use Case |
 | --- | --- | --- |
 | **[Nextcloud](https://github.com/nextcloud/server)** | [![GitHub_Stars](https://img.shields.io/github/stars/nextcloud/server?style=social&color=white)](https://github.com/nextcloud/server/stargazers) | Self-hosted school cloud for student files, parent permissions, and groupware |
 | **[Jitsi Meet](https://github.com/jitsi/jitsi-meet)** | [![GitHub_Stars](https://img.shields.io/github/stars/jitsi/jitsi-meet?style=social&color=white)](https://github.com/jitsi/jitsi-meet/stargazers) | Encrypted 100% open-source video conferencing for virtual parent-teacher conferences |
