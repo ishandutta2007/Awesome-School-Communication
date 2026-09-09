@@ -1,1335 +1,436 @@
-# Awesome-School-Communication
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome School Communication" width="100%" />
+</p>
 
-## Top School Communication Platforms
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-School-Communication/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-School-Communication?style=flat-square&color=gold" alt="Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-School-Communication/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-School-Communication?style=flat-square&color=blue" alt="Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-School-Communication/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-School-Communication/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-School-Communication/commits/main"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" alt="Maintained" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-**A comprehensive ecosystem of school-home communication, parent engagement, mass notification, messaging, newsletters and open-source school communication platforms**
+---
 
-*Open-source-first reference covering K-12 family communication, parent-teacher messaging, emergency alerts, mass notifications, newsletters, announcements, school apps, two-way communication and the infrastructure required to build self-hosted alternatives.*
+# 🏫 Awesome School Communication & Family Engagement
 
-**Last updated: September 2026**
+> 📚 **A Curated Directory of SaaS Suites, Open-Source Platforms, Multi-Channel Notification Infrastructure, and Telephony Stacks for K-12 School-to-Home Communication, Parent Engagement, Teacher Messaging, and Emergency Broadcasts.** 🚀
 
-School communication platforms help schools, teachers and districts communicate with students, parents, guardians and staff through:
+*Open-source-first reference covering K-12 family communication, parent-teacher messaging, emergency alerts, mass notifications, newsletters, announcements, school apps, two-way communication, and the infrastructure required to build self-hosted alternatives.*
 
-* SMS
-* email
-* voice calls
-* push notifications
-* mobile applications
-* web portals
-* two-way messaging
-* emergency alerts
-* school announcements
-* newsletters
-* calendars
-* attendance notifications
-* parent-teacher communication
-* multilingual communication
-* audience segmentation
-* surveys and forms
-* school-community engagement
+📅 **Last updated: September 2026**
 
-Examples include **SchoolMessenger, Finalsite Messages, ParentSquare, Apptegy Thrillshare, Blackboard Mass Notifications, Remind, Edlio, SchoolStatus, Smore and Konstella**.
+---
 
-Modern school communication platforms increasingly combine:
+## 🔍 SEO & Technology Overview
+
+Modern school communication platforms bridge the gap between educational institutions and families across multiple touchpoints:
+
+* 📱 **Multi-Channel Dispatch**: SMS broadcasts, email blasts, automated voice calls, and mobile push notifications.
+* 💬 **Two-Way Family Engagement**: Real-time teacher-to-parent messaging, classroom feeds, student portfolios, and private discussions.
+* 🚨 **Critical Safety & Emergency Broadcasts**: Rapid lockdown alerts, weather closures, bus schedule disruptions, and safety audits.
+* 🌐 **Automated Multilingual Translation**: Seamless 2-way text translation across 150+ languages to overcome linguistic barriers.
+* 📊 **SIS-Integrated Workflows**: Automated student attendance notifications, gradebook updates, truancy alerts, and parent portals.
+* 📰 **Visual Publishing & Newsletters**: High-engagement digital newsletters, calendar feeds, RSVP tracking, and permission forms.
+* 🔒 **Regulatory Privacy Compliance**: Adherence to FERPA, COPPA, CSPC, and student data confidentiality mandates.
+
+Key commercial benchmarks include **SchoolMessenger, Finalsite Messages, ParentSquare, Apptegy Thrillshare, Blackboard Mass Notifications, Remind, Edlio, SchoolStatus, Smore, and Konstella**.
 
 ```text
-School Website
-      +
-Mobile App
-      +
-Parent Portal
-      +
-Teacher Messaging
-      +
+School Website / CMS
+       +
+Parent Mobile App
+       +
+Family Portal
+       +
+Teacher-Parent Chat
+       +
 Mass Notifications
-      +
+       +
 Emergency Alerts
-      +
-Newsletters
-      +
-SMS / Email / Voice
-      +
-Translation
-      +
-Audience Segmentation
-      +
-School Data
-```
-
-The commercial market is increasingly moving toward unified communication platforms rather than isolated announcement tools. Apptegy's 2026 comparison, for example, frames the category around communication consolidation, family engagement, safety and scale.
-
-This README focuses particularly on **open-source alternatives and composable building blocks** that can be used to construct school communication systems without depending entirely on proprietary platforms.
-
-## Open-source emphasis
-
-The open-source ecosystem is fragmented. There are relatively few mature, direct open-source equivalents to ParentSquare or SchoolMessenger.
-
-Therefore this README separates:
-
-1. **Direct / near-direct open-source school communication systems**
-2. **Open-source school management systems with communication modules**
-3. **Open-source notification infrastructure**
-4. **Open-source messaging platforms**
-5. **Open-source email/SMS/voice infrastructure**
-6. **Open-source collaboration platforms**
-7. **Open-source newsletter and publishing systems**
-8. **Open-source authentication, workflow and data infrastructure**
-
-> **Important:** A school-management system with an announcements module is not automatically equivalent to a dedicated school communication platform. Likewise, a generic messaging server is not automatically a ParentSquare or SchoolMessenger replacement.
-
-A realistic open-source implementation may therefore combine several projects:
-
-```text
-School Management
-       ↓
-Parent / Student Directory
-       ↓
-Communication Engine
-       ↓
-Notification Infrastructure
-       ↓
-SMS / Email / Push / Voice
-       ↓
-Parent Mobile / Web App
-```
-
-There are already community projects specifically targeting school communication. For example, `School-Notification-Managment-System` provides teacher posts, student/parent access and in-app/email notifications, while Gibbon is an established open-source school-management platform designed for teachers, students, parents and school leaders.
-
-Contributions and corrections are welcome.
-
----
-
-## Table of Contents
-
-* [SaaS/Hosted Platforms](#saashosted-platforms)
-* [Open-Source School Communication Platforms](#open-source-school-communication-platforms)
-* [Open-Source School Management Platforms with Communication](#open-source-school-management-platforms-with-communication)
-* [Open-Source Notification Infrastructure](#open-source-notification-infrastructure)
-* [Open-Source Messaging Platforms](#open-source-messaging-platforms)
-* [Open-Source Email, SMS & Voice Infrastructure](#open-source-email-sms--voice-infrastructure)
-* [Open-Source Newsletter & Publishing Platforms](#open-source-newsletter--publishing-platforms)
-* [Open-Source Collaboration Platforms](#open-source-collaboration-platforms)
-* [Open-Source Authentication & Identity](#open-source-authentication--identity)
-* [Additional Strong Open-Source Options](#additional-strong-open-source-options)
-* [Commercial Platform → Open-Source Equivalents](#commercial-platform--open-source-equivalents)
-* [Frameworks for Building Custom School Communication Systems](#frameworks-for-building-custom-school-communication-systems)
-* [Reference Architecture](#reference-architecture)
-* [Typical School Communication Workflow](#typical-school-communication-workflow)
-* [Emergency Notification Workflow](#emergency-notification-workflow)
-* [Parent-Teacher Messaging Workflow](#parent-teacher-messaging-workflow)
-* [Newsletter Workflow](#newsletter-workflow)
-* [Attendance Notification Workflow](#attendance-notification-workflow)
-* [Multichannel Notification Architecture](#multichannel-notification-architecture)
-* [Capability Matrix](#capability-matrix)
-* [Recommended Open-Source Stacks](#recommended-open-source-stacks)
-* [What Is Still Difficult to Reproduce in Open Source?](#what-is-still-difficult-to-reproduce-in-open-source)
-* [Why Open Source Is Interesting](#why-open-source-is-interesting)
-* [How to Contribute](#how-to-contribute)
-* [Disclaimer](#disclaimer)
-
----
-
-# SaaS/Hosted Platforms
-
-These are commercial, hosted or enterprise-oriented school communication platforms.
-
-| Platform | Primary Model | Main Strength | Pricing | Free Tier Limit |
-| --- | --- | --- | --- | --- |
-| [SchoolMessenger](https://www.schoolmessenger.com/) | K-12 mass communication | Emergency + mass notifications | Starts at ~$2.00–$5.00 / student / year (min. annual contract ~$2,000–$5,000 / year) | No permanent free tier for schools (mobile app 100% free for parents); 30-day evaluation pilot on sales request |
-| [Finalsite Messages](https://www.finalsite.com/) | School communications | Websites + messaging + engagement | Starts at ~$2.00–$3.00 / student / year (min. annual contract ~$2,000 / year) | No permanent free tier; 30-day sandbox evaluation trial available upon sales request |
-| [ParentSquare](https://www.parentsquare.com/) | Family engagement | Two-way communication + mass notifications | Starts at ~$3,000 / year base per school site (~$2.00–$4.00 / student / year) | No permanent free tier for schools (100% free for parents & students); 30-day pilot / guided demo on sales request |
-| [Apptegy Thrillshare](https://www.apptegy.com/) | District communication | Website + app + mass communication | Starts at ~$4,000–$7,500 / year base per district + ~$2.50–$3.50 / student / year | No permanent free tier; 30-day district evaluation pilot and interactive demo on request |
-| [Blackboard Mass Notifications](https://www.blackboard.com/teaching-learning/communication-collaboration/mass-notifications) | Emergency/mass notification | Alerts + institutional messaging | Starts at ~$2.00–$3.50 / student / year (min. annual contract ~$2,500 / year) | No permanent free tier; 30-day pilot / sandbox demo environment on request |
-| [Remind](https://www.remind.com/) | Teacher/family messaging | Simple two-way school-home messaging | Free for teachers; Remind Hub starts at ~$4,000 / year (~$3.00–$5.00 / student / year) | Free forever plan (Remind Chat) supports up to 10 classes per teacher and 150 participants per class; custom pilot for Hub |
-| [Edlio](https://www.edlio.com/) | School communications | Website + CMS + mobile communication | Starts at ~$2,500–$4,500 / year base per school site + setup fees | No permanent free tier; 30-day full-feature sandbox demo / trial on sales request |
-| [SchoolStatus](https://www.schoolstatus.com/) | Family engagement | Data-driven communication | Starts at ~$2.00–$4.00 / student / year (base campus fee ~$1,500–$3,000 / school / year) | No permanent free tier for core platform; 30-day district pilot / guided walkthrough on request |
-| [Smore](https://www.smore.com/) | School newsletters | Newsletter creation + distribution | Free tier available; Educator Pro starts at $79.00 / year ($15.00 / month); Team plans from $399.00 / year | Free forever plan allows up to 5 newsletters with Smore branding; Pro plan offers a 30-day free trial (no credit card required) |
-| [Konstella](https://www.konstella.com/) | Parent/school community | School-community communication | Starts at $424 / year (Basic), $849 / year (Premium), and $1,049 / year (Platinum) flat fee per school | No permanent free tier for schools (100% free for parents & PTA members); 30-day free trial for parent associations |
-| [TalkingPoints](https://talkingpts.org/) | Family engagement | Multilingual two-way communication | $0 for individual teachers; School/District plans start at ~$2.50–$4.00 / student / year | Free forever teacher plan includes up to 5 classes and 200 students with 2-way translation; 30-day district pilot on request |
-| [ClassDojo](https://www.classdojo.com/) | Family engagement | Teacher-parent communication | $0 for teachers & schools; optional ClassDojo Plus for families at $15.49 / month ($59.99 / year) | 100% Free forever for teachers, schools, and families (unlimited messaging & class stories); 7-day free trial for ClassDojo Plus |
-| [Bloomz](https://www.bloomz.com/) | School communication | Messaging + announcements + parent engagement | Free tier available; Teacher Premium at $125.00 / year; Schoolwide Premium starts at ~$3.00 / student / year (~$1,500/yr min) | Free forever teacher plan (1 class, up to 30 students, 1 Admin + 1 Co-Teacher); 14-day free trial for Teacher Premium |
-| [ParentSquare (District Tier)](https://www.parentsquare.com/) | Family engagement | District-wide communication | Starts at ~$5,000–$10,000 / year district base (~$1.75–$3.00 / student / year) | No permanent free tier for districts (free mobile app for parents); 30-day district evaluation pilot on request |
-| [SchoolStatus Connect](https://www.schoolstatus.com/products/connect-family-school-partnerships) | Family engagement | Messaging + mass notifications + newsletters | Free for teachers; School/District packages start at ~$2.00–$3.00 / student / year (ad-free teacher at $3.99 / month) | Free forever for classroom teachers (unlimited family messaging, announcements, and translation); 30-day trial pilot for districts |
-| [Blackboard](https://www.anthology.com/products/teaching-and-learning/learning-effectiveness/blackboard) | Education platform | Institutional communication ecosystem | Starts at ~$9,500 / year base for small institutions (or ~$25.00–$40.00 / FTE student / year) | Free 30-day trial of Blackboard Learn (up to 5 courses, 25 students, full instructor tools; no credit card required) |
-| [PowerSchool](https://www.powerschool.com/) | Education platform | SIS + family communication ecosystem | Starts at ~$5.00–$8.00 / student / year (typical min. annual contract ~$3,000–$5,000 / year) | No permanent free tier for schools (PowerSchool Mobile app is 100% free for parents & students); 30-day sandbox pilot on sales request |
-| [Finalsite](https://www.finalsite.com/) | K-12 digital platform | Websites + communications | Starts at ~$3,500–$6,000 / year base + implementation & template setup fees | No permanent free tier; 30-day sandbox trial environment available upon sales consultation |
-| [SchoolInfoApp](https://www.schoolinfoapp.com/) | School communication | Mobile app + notifications | Starts at ~$1,500 / year base per school (~$1.50–$2.50 / student / year + setup fee) | No permanent free tier for schools (mobile app 100% free for parents/students); 30-day pilot trial on request |
-| [TeacherEase](https://www.teacherease.com/) | School communication | Parent/teacher communication | Starts at $175.67 / teacher / year (tier for 1–19 teachers; no per-student fee) | No permanent free tier for teachers (parent & student access is 100% free); 30-day guided pilot / demo for schools on request |
-| [Campus Suite](https://www.campussuite.com/) | School websites/communication | Websites + mobile communication | Starts at ~$2,500–$4,000 / year base per school (~$1.50–$3.00 / student / year) | No permanent free tier; 30-day interactive sandbox demo / trial environment on request |
-
-SchoolStatus Connect currently combines mass notifications, two-way messaging, a family app and Smore newsletters, illustrating how the market is converging toward unified communications hubs.
-
-### Important 2026 market note
-
-**Remind is now part of ParentSquare.** ParentSquare announced its acquisition of Remind and described the combination as bringing together two major K-12 communication platforms.
-
----
-
-# Open-Source School Communication Platforms
-
-The strongest open-source options are generally **school-management platforms with communication capabilities** plus a smaller number of dedicated communication projects.
-
----
-
-# 1. Gibbon
-
-[GitHub](https://github.com/GibbonEdu/core)
-
-[Website](https://gibbonedu.org/)
-
-Gibbon is one of the most established open-source school-management platforms.
-
-It is designed for:
-
-* teachers
-* students
-* parents
-* school leaders
-* administrators
-
-The core platform is GPL-3.0 and supports extensibility through modules and themes.
-
-Relevant communication capabilities can include:
-
-* school notices
-* parent/student information
-* messaging-related workflows
-* calendars
-* activities
-* attendance
-* student records
-* school administration
-
-Gibbon is therefore an important **open-source foundation** for building a school communication platform.
-
----
-
-# 2. School Notification Management System
-
-[GitHub](https://github.com/fadkeabhi/School-Notification-Managment-System)
-
-A community-built project specifically oriented around school notifications.
-
-Features include:
-
-* administrator module
-* teachers
-* classes
-* students
-* teacher posts
-* parent/student access
-* in-app notifications
-* email notifications
-
-The project was developed as a school notification-management application using React, Node.js/Express and MongoDB.
-
-It is closer to the communication use case than a generic school ERP.
-
----
-
-# 3. School OS
-
-[GitHub](https://github.com/shabirkhan-dev/school-os)
-
-School OS is a modern mobile-first school platform emphasizing parent communication and safety.
-
-Its architecture includes:
-
-```text
-Next.js
-+
-Expo
-+
-NestJS
-+
-FastAPI
-+
-Docker
-```
-
-Its communication-oriented concept starts with attendance and WhatsApp alerts and expands toward school communication, academics, finance and teaching tools.
-
-Useful for studying a modern:
-
-```text
-School
- ↓
-Student
- ↓
-Attendance
- ↓
-Parent
- ↓
-Instant Notification
-```
-
-architecture.
-
----
-
-# 4. Parent-Teacher Portal
-
-[GitHub](https://github.com/GIT-ARYA/PTPortal)
-
-A full-stack parent-teacher communication and student-progress application.
-
-Features include:
-
-* parent accounts
-* teacher accounts
-* administrator accounts
-* real-time messaging
-* student progress
-* attendance
-* grades
-* announcements
-* notifications
-* meeting scheduling
-
-It is a useful reference implementation for building a smaller ParentSquare-like system.
-
----
-
-# 5. eCommunicationBook
-
-[GitHub](https://github.com/Bennacci/eCommunicationBook)
-
-A digital communication-book concept designed specifically for parents and teachers.
-
-It supports:
-
-* parent/teacher roles
-* attendance
-* class performance
-* learning progress
-* homework
-* school calendar
-* events
-* parent-teacher communication
-
-It is particularly useful as a conceptual example of a **digital school-home communication diary**.
-
----
-
-# 6. School Management System — MERN
-
-[GitHub](https://github.com/saismrutiranjan18/School-Management-System)
-
-This project includes:
-
-* school announcements
-* class-specific communication
-* real-time push notifications
-* email blasts
-* parent-teacher messaging
-* attendance alerts
-* calendar
-* student/parent accounts
-
-It demonstrates how school communication can be integrated directly into the school-management platform.
-
----
-
-# 7. School Management System — PHP
-
-[GitHub](https://github.com/crazymodifier/school-management-system)
-
-A school-management platform with:
-
-* student panel
-* teacher panel
-* parent panel
-* administrator panel
-* announcements
-* messaging
-* attendance notifications
-* parent communication
-
-It provides a practical reference for a self-hosted school portal with integrated communications.
-
----
-
-# 8. SchoolMS
-
-[GitHub](https://github.com/TemiKayode/School-Management-System)
-
-A more recent full-stack school-management platform featuring:
-
-* role-based dashboards
-* announcements
-* notifications
-* real-time messaging
-* parent/teacher communication
-* push notifications
-* monitoring
-* GDPR-related controls
-
-The project explicitly includes in-app and push notifications, role-scoped messaging and school-wide announcements.
-
----
-
-# 9. School Management Software
-
-[GitHub](https://github.com/okoyechuka/school-managment-software)
-
-Includes a communication module supporting:
-
-* bulk SMS
-* email
-* parent communication
-* student communication
-* staff communication
-* internal messaging
-
-It is particularly interesting because communication is treated as a dedicated module rather than merely an announcement feature.
-
----
-
-# Open-Source School Management Platforms with Communication
-
-These projects are not direct ParentSquare/SchoolMessenger replacements, but they can provide the **student-family data model** required by a communication platform.
-
-## OpenEduCat
-
-[GitHub](https://github.com/openeducat/openeducat_erp)
-
-Provides:
-
-* student management
-* parent management
-* teacher management
-* attendance
-* academic management
-* communication
-* portals
-
----
-
-## Fedena
-
-[GitHub](https://github.com/projectfedena/fedena)
-
-Open-source school-management platform with:
-
-* student records
-* parents
-* teachers
-* attendance
-* announcements
-* messaging
-* school administration
-
----
-
-## RosarioSIS
-
-[GitHub](https://github.com/francoisjacquet/rosariosis)
-
-Open-source student information system.
-
-Useful for:
-
-* student records
-* parent records
-* attendance
-* scheduling
-* school information
-* notifications
-
----
-
-## Frappe Education
-
-[GitHub](https://github.com/frappe/education)
-
-Education module built around the Frappe ecosystem.
-
-Can provide:
-
-* students
-* guardians
-* courses
-* programs
-* attendance
-* academic structure
-* communication workflows
-
----
-
-## OpenSIS
-
-[GitHub](https://github.com/OS4Ed/openSIS-Classic)
-
-Open-source student information system useful as a data source for communication systems.
-
----
-
-## AlekSIS
-
-[GitHub](https://github.com/AlekSIS/official)
-
-Open-source school information system.
-
----
-
-## Sentrifugo
-
-[GitHub](https://github.com/sapplica/sentrifugo)
-
-Primarily an HR system, but useful as a reference for role-based organizational communication infrastructure.
-
----
-
-# Open-Source Notification Infrastructure
-
-A dedicated school communication system needs a notification engine.
-
----
-
-# 1. Novu
-
-[GitHub](https://github.com/novuhq/novu)
-
-Novu provides an open-source notification infrastructure with:
-
-* in-app notifications
-* push
-* email
-* SMS
-* chat
-* notification workflows
-* preferences
-* templates
-* provider abstraction
-
-Its architecture is particularly suitable for building:
-
-```text
-School Event
-     ↓
-Notification Workflow
-     ↓
-SMS / Email / Push / In-App
-```
-
-Novu explicitly provides a unified API for multi-channel notification delivery.
-
----
-
-# 2. Gotify
-
-[GitHub](https://github.com/gotify/server)
-
-Self-hosted push notification server.
-
-Useful for:
-
-* emergency notifications
-* internal school alerts
-* administrative notifications
-* system notifications
-
----
-
-# 3. ntfy
-
-[GitHub](https://github.com/binwiederhier/ntfy)
-
-Simple HTTP-based publish/subscribe notification system.
-
-Example:
-
-```text
-School Event
-     ↓
-ntfy Topic
-     ↓
-Parent Devices
-```
-
-Useful for lightweight self-hosted push notifications.
-
----
-
-# 4. Apprise
-
-[GitHub](https://github.com/caronc/apprise)
-
-Apprise provides a common interface for sending notifications through many services.
-
-Useful as an integration layer:
-
-```text
-School System
-     ↓
-Apprise
-     ↓
-Email / SMS / Push / Chat
+       +
+Newsletters & Stories
+       +
+SMS / Email / Voice Gateways
+       +
+Real-Time Translation
+       +
+SIS / Student Directory
 ```
 
 ---
 
-# 5. Node-RED
+## 🧭 Table of Contents
 
-[GitHub](https://github.com/node-red/node-red)
-
-Visual workflow automation.
-
-Useful for:
-
-* attendance alerts
-* emergency messages
-* scheduled announcements
-* event reminders
-* notification routing
-
----
-
-# 6. n8n
-
-[GitHub](https://github.com/n8n-io/n8n)
-
-Workflow automation platform useful for connecting:
-
-```text
-SIS
- ↓
-n8n
- ↓
-Notification Provider
-```
-
----
-
-# 7. Temporal
-
-[GitHub](https://github.com/temporalio/temporal)
-
-Useful for reliable long-running communication workflows.
-
-Examples:
-
-```text
-Emergency Alert
- ↓
-Send SMS
- ↓
-Wait
- ↓
-Check delivery
- ↓
-Retry
- ↓
-Escalate to voice
-```
+* [📊 Market Overview & SaaS/Hosted Platforms](#-saashosted-platforms)
+* [💻 Open-Source School Communication Platforms](#-open-source-school-communication-platforms)
+* [🏫 Open-Source School Management Platforms with Communication](#-open-source-school-management-platforms-with-communication)
+* [🔔 Open-Source Notification Infrastructure](#-open-source-notification-infrastructure)
+* [💬 Open-Source Messaging Platforms](#-open-source-messaging-platforms)
+* [✉️ Open-Source Email, SMS & Voice Infrastructure](#️-open-source-email-sms--voice-infrastructure)
+* [📰 Open-Source Newsletter & Publishing Platforms](#-open-source-newsletter--publishing-platforms)
+* [👥 Open-Source Collaboration Platforms](#-open-source-collaboration-platforms)
+* [🔐 Open-Source Authentication & Identity](#-open-source-authentication--identity)
+* [⭐ Additional Strong Open-Source Options](#-additional-strong-open-source-options)
+* [🔄 Commercial Platform → Open-Source Equivalents](#-commercial-platform--open-source-equivalents)
+* [🛠️ Frameworks for Building Custom School Communication Systems](#️-frameworks-for-building-custom-school-communication-systems)
+* [🏛️ Reference Architecture](#️-reference-architecture)
+* [📋 Typical School Communication Workflow](#-typical-school-communication-workflow)
+* [🚨 Emergency Notification Workflow](#-emergency-notification-workflow)
+* [👨‍🏫 Parent-Teacher Messaging Workflow](#-parent-teacher-messaging-workflow)
+* [📰 Newsletter Workflow](#-newsletter-workflow)
+* [⏰ Attendance Notification Workflow](#-attendance-notification-workflow)
+* [📡 Multichannel Notification Architecture](#-multichannel-notification-architecture)
+* [📊 Capability Matrix](#-capability-matrix)
+* [📦 Recommended Open-Source Stacks](#-recommended-open-source-stacks)
+* [🧩 What Is Still Difficult to Reproduce in Open Source?](#-what-is-still-difficult-to-reproduce-in-open-source)
+* [💡 Why Open Source Is Interesting](#-why-open-source-is-interesting)
+* [📈 Star History](#-star-history)
+* [🤝 How to Contribute](#-how-to-contribute)
+* [⚖️ Disclaimer & Compliance](#️-disclaimer--compliance)
 
 ---
 
-# Open-Source Messaging Platforms
+## 🏢 SaaS/Hosted Platforms
 
-Generic messaging platforms can provide the communication layer of a school system.
+> 💡 **Market Size & Structural Dynamics**: The global K-12 school communication, mass notification, and family engagement software sector represents an estimated **$2.5B to $4.2B addressable market** (growing at an estimated **12–15% CAGR** within the broader $100B+ education technology space). The industry is **moderately fragmented**: major enterprise consolidators (e.g., PowerSchool / Bain Capital, ParentSquare / Carlyle Group, Anthology / Veritas Capital) are driving platform mergers and roll-ups across district-wide mass notification suites, while the ecosystem remains decentralized due to independent school district procurement autonomy, localized data privacy regulations (FERPA, COPPA, CSPC), and extensive grassroots classroom-level adoption by individual educators (e.g., ClassDojo, TalkingPoints, Remind).
 
----
+*Commercial school communication platforms sorted in **descending order by company size, valuation, or estimated annual revenue**.*
 
-## Mattermost
+| 🏆 Platform | 🏢 Company Size / Valuation / Est. Revenue | 📝 Primary Model | ⚡ Main Strength | 💲 Pricing | 🎁 Free Tier Limit |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[PowerSchool](https://www.powerschool.com/)** | **~$5.6B Valuation / ~$740M ARR**<br>*(Acquired by Bain Capital; serves 50M+ students)* | Education platform | SIS + family communication ecosystem | Starts at **~$5.00–$8.00 / student / year** (typical min. annual contract ~$3,000–$5,000 / year) | No permanent free tier for schools (PowerSchool Mobile app is **100% free for parents & students**); **30-day sandbox pilot** on sales request |
+| **[SchoolMessenger](https://www.schoolmessenger.com/)** | **~$5.6B Parent Valuation / ~$740M ARR**<br>*(Part of PowerSchool suite; trusted by 63,000+ schools)* | K-12 mass communication | Emergency + mass notifications | Starts at **~$2.00–$5.00 / student / year** (min. annual contract ~$2,000–$5,000 / year) | No permanent free tier for schools (mobile app **100% free for parents**); **30-day evaluation pilot** on sales request |
+| **[Blackboard](https://www.anthology.com/products/teaching-and-learning/learning-effectiveness/blackboard)** | **~$3.0B Valuation / ~$650M Revenue**<br>*(Part of Anthology; backed by Veritas Capital & Leeds Equity)* | Education platform | Institutional communication ecosystem | Starts at **~$9,500 / year base** for small institutions (or ~$25.00–$40.00 / FTE student / year) | **Free 30-day trial** of Blackboard Learn (up to 5 courses, 25 students, full instructor tools; no credit card required) |
+| **[Blackboard Mass Notifications](https://www.blackboard.com/teaching-learning/communication-collaboration/mass-notifications)** | **~$3.0B Parent Valuation / ~$650M Revenue**<br>*(Anthology K-12 communications division)* | Emergency/mass notification | Alerts + institutional messaging | Starts at **~$2.00–$3.50 / student / year** (min. annual contract ~$2,500 / year) | No permanent free tier; **30-day pilot / sandbox demo** environment on request |
+| **[Finalsite](https://www.finalsite.com/)** | **~$1.5B Valuation / ~$150M+ ARR**<br>*(Backed by Bridgepoint; powers 7,000+ school websites)* | K-12 digital platform | Websites + communications | Starts at **~$3,500–$6,000 / year base** + implementation & template setup fees | No permanent free tier; **30-day sandbox trial environment** available upon sales consultation |
+| **[Finalsite Messages](https://www.finalsite.com/)** | **~$1.5B Parent Valuation / ~$150M+ ARR**<br>*(Bridgepoint-backed dedicated messaging module)* | School communications | Websites + messaging + engagement | Starts at **~$2.00–$3.00 / student / year** (min. annual contract ~$2,000 / year) | No permanent free tier; **30-day sandbox evaluation trial** available upon sales request |
+| **[ClassDojo](https://www.classdojo.com/)** | **~$1.25B Valuation / ~$60M ARR**<br>*(Series D EdTech Unicorn; 50M+ students in 180 countries)* | Family engagement | Teacher-parent communication | **$0 for teachers & schools**; optional ClassDojo Plus for families at **$15.49 / month** ($59.99 / year) | **100% Free forever** for teachers, schools, and families (unlimited messaging & class stories); **7-day free trial** for ClassDojo Plus |
+| **[ParentSquare (District Tier)](https://www.parentsquare.com/)** | **~$1.0B+ Valuation / ~$80M–$100M ARR**<br>*(Backed by Carlyle & Luminate; acquired Remind & Gabbart)* | Family engagement | District-wide communication | Starts at **~$5,000–$10,000 / year district base** (~$1.75–$3.00 / student / year) | No permanent free tier for districts (free mobile app for parents); **30-day district evaluation pilot** on request |
+| **[ParentSquare](https://www.parentsquare.com/)** | **~$1.0B+ Valuation / ~$80M–$100M ARR**<br>*(Unified family engagement platform for K-12)* | Family engagement | Two-way communication + mass notifications | Starts at **~$3,000 / year base** per school site (~$2.00–$4.00 / student / year) | No permanent free tier for schools (**100% free for parents & students**); **30-day pilot / guided demo** on sales request |
+| **[SchoolStatus](https://www.schoolstatus.com/)** | **~$40M–$60M ARR**<br>*(Backed by Align Capital; acquired Smore & ClassTag; 5M+ students)* | Family engagement | Data-driven communication | Starts at **~$2.00–$4.00 / student / year** (base campus fee ~$1,500–$3,000 / school / year) | No permanent free tier for core platform; **30-day district pilot / guided walkthrough** on request |
+| **[SchoolStatus Connect](https://www.schoolstatus.com/products/connect-family-school-partnerships)** | **~$40M–$60M Parent ARR**<br>*(Formerly ClassTag; integrated into SchoolStatus ecosystem)* | Family engagement | Messaging + mass notifications + newsletters | **Free for teachers**; School/District packages start at **~$2.00–$3.00 / student / year** (ad-free teacher at $3.99 / month) | **Free forever for classroom teachers** (unlimited family messaging, announcements, and translation); **30-day trial pilot** for districts |
+| **[Apptegy Thrillshare](https://www.apptegy.com/)** | **~$35M–$50M ARR**<br>*(Backed by Five Elms Capital; powers 4,000+ districts)* | District communication | Website + app + mass communication | Starts at **~$4,000–$7,500 / year base per district** + ~$2.50–$3.50 / student / year | No permanent free tier; **30-day district evaluation pilot** and interactive demo on request |
+| **[Remind](https://www.remind.com/)** | **~$20M ARR**<br>*(Subsidiary of ParentSquare; 30M+ active users)* | Teacher/family messaging | Simple two-way school-home messaging | **Free for teachers**; Remind Hub starts at **~$4,000 / year** (~$3.00–$5.00 / student / year) | **Free forever plan (Remind Chat)** supports up to 10 classes per teacher and 150 participants per class; custom pilot for Hub |
+| **[Edlio](https://www.edlio.com/)** | **~$15M–$25M ARR**<br>*(Backed by Linsalata Capital Partners; powers 10,000+ schools)* | School communications | Website + CMS + mobile communication | Starts at **~$2,500–$4,500 / year base** per school site + setup fees | No permanent free tier; **30-day full-feature sandbox demo / trial** on sales request |
+| **[TalkingPoints](https://talkingpts.org/)** | **~$8M–$12M Budget**<br>*(501(c)(3) Non-Profit supported by Google.org & Schmidt Futures)* | Family engagement | Multilingual two-way communication | **$0 for individual teachers**; School/District plans start at **~$2.50–$4.00 / student / year** | **Free forever teacher plan** includes up to 5 classes and 200 students with 2-way translation; **30-day district pilot** on request |
+| **[Bloomz](https://www.bloomz.com/)** | **~$5M–$10M ARR**<br>*(Trusted by 3M+ teachers, parents, and administrators)* | School communication | Messaging + announcements + parent engagement | Free tier available; Teacher Premium at **$125.00 / year**; Schoolwide Premium starts at **~$3.00 / student / year** (~$1,500/yr min) | **Free forever teacher plan** (1 class, up to 30 students, 1 Admin + 1 Co-Teacher); **14-day free trial** for Teacher Premium |
+| **[TeacherEase](https://www.teacherease.com/)** | **~$5M–$10M ARR**<br>*(Common Goal Systems; trusted by private & public schools)* | School communication | Parent/teacher communication | Starts at **$175.67 / teacher / year** (tier for 1–19 teachers; no per-student fee) | No permanent free tier for teachers (parent & student access is **100% free**); **30-day guided pilot / demo** for schools on request |
+| **[Smore](https://www.smore.com/)** | **~$5M–$8M ARR**<br>*(1M+ active educators; SchoolStatus subsidiary)* | School newsletters | Newsletter creation + distribution | Free tier available; Educator Pro starts at **$79.00 / year** ($15.00 / month); Team plans from **$399.00 / year** | **Free forever plan** allows up to 5 newsletters with Smore branding; Pro plan offers a **30-day free trial** (no credit card required) |
+| **[Campus Suite](https://www.campussuite.com/)** | **~$3M–$6M ARR**<br>*(Innersync Studio K-12 communications provider)* | School websites/communication | Websites + mobile communication | Starts at **~$2,500–$4,000 / year base** per school (~$1.50–$3.00 / student / year) | No permanent free tier; **30-day interactive sandbox demo / trial environment** on request |
+| **[SchoolInfoApp](https://www.schoolinfoapp.com/)** | **~$2M–$5M ARR**<br>*(Edlio subsidiary; powers branded mobile school apps)* | School communication | Mobile app + notifications | Starts at **~$1,500 / year base** per school (~$1.50–$2.50 / student / year + setup fee) | No permanent free tier for schools (mobile app **100% free for parents/students**); **30-day pilot trial** on request |
+| **[Konstella](https://www.konstella.com/)** | **~$1M–$2M ARR**<br>*(Specialized school-parent community & PTA platform)* | Parent/school community | School-community communication | Starts at **$424 / year (Basic)**, **$849 / year (Premium)**, and **$1,049 / year (Platinum)** flat fee per school | No permanent free tier for schools (**100% free for parents & PTA members**); **30-day free trial** for parent associations |
 
-[GitHub](https://github.com/mattermost/mattermost)
+SchoolStatus Connect currently combines mass notifications, two-way messaging, a family app, and Smore newsletters, illustrating how the market is converging toward unified communications hubs.
 
-Useful for:
-
-* staff communication
-* teacher groups
-* administration
-* school departments
-* internal messaging
-
----
-
-## Rocket.Chat
-
-[GitHub](https://github.com/RocketChat/Rocket.Chat)
-
-Supports:
-
-* channels
-* direct messaging
-* groups
-* file sharing
-* integrations
-* notifications
-
----
-
-## Matrix / Synapse
-
-[GitHub](https://github.com/element-hq/synapse)
-
-Matrix provides decentralized real-time communication.
-
-Potential school architecture:
-
-```text
-School
- ↓
-Matrix Server
- ↓
-Teachers / Parents / Students
-```
+### 📌 Important 2026 Market Note
+**Remind is now part of ParentSquare.** ParentSquare completed the acquisition of Remind, unifying two of the largest K-12 family communication networks under a single umbrella.
 
 ---
 
-## Element
+## 💻 Open-Source School Communication Platforms
 
-[GitHub](https://github.com/element-hq/element-web)
+*Dedicated open-source school communication projects and family portals, sorted by GitHub star count (descending).*
 
-Matrix client for web-based communication.
+* **[Gibbon](https://github.com/GibbonEdu/core)** [![GitHub_Stars](https://img.shields.io/github/stars/GibbonEdu/core?style=social&color=white)](https://github.com/GibbonEdu/core/stargazers)
+  Established, mature open-source school management platform with notices, parent/student dashboards, messaging workflows, calendars, and attendance tracking. (GPL-3.0)
 
----
+* **[crazymodifier / School Management System](https://github.com/crazymodifier/school-management-system)** [![GitHub_Stars](https://img.shields.io/github/stars/crazymodifier/school-management-system?style=social&color=white)](https://github.com/crazymodifier/school-management-system/stargazers)
+  PHP/MySQL self-hosted school portal with student, teacher, parent, and admin dashboards, broadcast announcements, and attendance notifications.
 
-## Zulip
+* **[okoyechuka / School Management Software](https://github.com/okoyechuka/school-managment-software)** [![GitHub_Stars](https://img.shields.io/github/stars/okoyechuka/school-managment-software?style=social&color=white)](https://github.com/okoyechuka/school-managment-software/stargazers)
+  Full school management software featuring a dedicated communication module for bulk SMS, email, and staff/parent messaging.
 
-[GitHub](https://github.com/zulip/zulip)
+* **[fadkeabhi / School Notification Management System](https://github.com/fadkeabhi/School-Notification-Managment-System)** [![GitHub_Stars](https://img.shields.io/github/stars/fadkeabhi/School-Notification-Managment-System?style=social&color=white)](https://github.com/fadkeabhi/School-Notification-Managment-System/stargazers)
+  MERN stack application specifically built for school notification delivery, teacher class posts, parent accounts, and in-app/email notifications.
 
-Threaded team communication platform.
+* **[Bennacci / eCommunicationBook](https://github.com/Bennacci/eCommunicationBook)** [![GitHub_Stars](https://img.shields.io/github/stars/Bennacci/eCommunicationBook?style=social&color=white)](https://github.com/Bennacci/eCommunicationBook/stargazers)
+  Digital school-home communication diary concept designed for parent-teacher notes, homework feeds, calendars, and performance reports.
 
-Useful for:
+* **[TemiKayode / SchoolMS](https://github.com/TemiKayode/School-Management-System)** [![GitHub_Stars](https://img.shields.io/github/stars/TemiKayode/School-Management-System?style=social&color=white)](https://github.com/TemiKayode/School-Management-System/stargazers)
+  Modern full-stack school management system featuring role-based dashboards, real-time messaging, announcements, and push notifications.
 
-* teacher teams
-* departments
-* school administration
+* **[shabirkhan-dev / School OS](https://github.com/shabirkhan-dev/school-os)** [![GitHub_Stars](https://img.shields.io/github/stars/shabirkhan-dev/school-os?style=social&color=white)](https://github.com/shabirkhan-dev/school-os/stargazers)
+  Mobile-first school operating system combining Next.js, Expo, NestJS, and WhatsApp integration for instant parent attendance alerts and campus communication.
 
----
+* **[GIT-ARYA / Parent-Teacher Portal](https://github.com/GIT-ARYA/PTPortal)** [![GitHub_Stars](https://img.shields.io/github/stars/GIT-ARYA/PTPortal?style=social&color=white)](https://github.com/GIT-ARYA/PTPortal/stargazers)
+  Full-stack parent-teacher communication portal supporting real-time chat, student progress, grades, announcements, and parent meeting scheduling.
 
-## Nextcloud Talk
-
-[GitHub](https://github.com/nextcloud/spreed)
-
-Provides:
-
-* messaging
-* calls
-* video
-* file sharing
-* collaboration
+* **[saismrutiranjan18 / School Management System](https://github.com/saismrutiranjan18/School-Management-System)** [![GitHub_Stars](https://img.shields.io/github/stars/saismrutiranjan18/School-Management-System?style=social&color=white)](https://github.com/saismrutiranjan18/School-Management-System/stargazers)
+  MERN-stack school portal integrating announcements, class-specific communication, real-time push alerts, and parent messaging.
 
 ---
 
-# Open-Source Email, SMS & Voice Infrastructure
+## 🏫 Open-Source School Management Platforms with Communication
 
-SchoolMessenger-like functionality requires more than an application.
+*Student Information Systems (SIS) and ERPs that supply the foundational student-family data model required by communication engines, sorted by GitHub star count (descending).*
 
-It requires communication channels.
+* **[Odoo](https://github.com/odoo/odoo)** [![GitHub_Stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers)
+  Extensible open-source ERP with dedicated Education modules for managing student records, guardian portals, attendance notifications, and admissions.
 
----
+* **[Frappe ERPNext](https://github.com/frappe/erpnext)** [![GitHub_Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers)
+  Comprehensive open-source ERP framework featuring an Education module for admissions, guardian tracking, assessment reports, and automated SMS/email triggers.
 
-# Email
+* **[OpenEduCat](https://github.com/openeducat/openeducat_erp)** __STAR_openeducat/openeducat_erp__
+  Odoo-based open-source education platform featuring parent access portals, classroom assignment feeds, timetable tracking, and automated parent notifications.
 
-## Postal
+* **[RosarioSIS](https://github.com/francoisjacquet/rosariosis)** [![GitHub_Stars](https://img.shields.io/github/stars/francoisjacquet/rosariosis?style=social&color=white)](https://github.com/francoisjacquet/rosariosis/stargazers)
+  Free and open-source PHP/PostgreSQL Student Information System with built-in parent/student portals, disciplinary records, attendance logs, and notifications.
 
-[GitHub](https://github.com/postalserver/postal)
+* **[Frappe Education](https://github.com/frappe/education)** [![GitHub_Stars](https://img.shields.io/github/stars/frappe/education?style=social&color=white)](https://github.com/frappe/education/stargazers)
+  Dedicated education application built on the Frappe framework for student records, guardian links, academic structure, and communication workflows.
 
-Open-source mail delivery platform.
+* **[Fedena](https://github.com/projectfedena/fedena)** [![GitHub_Stars](https://img.shields.io/github/stars/projectfedena/fedena?style=social&color=white)](https://github.com/projectfedena/fedena/stargazers)
+  Ruby on Rails school-management platform with student/parent profiles, attendance logs, announcements, and internal messaging.
 
----
+* **[openSIS Classic](https://github.com/OS4Ed/openSIS-Classic)** [![GitHub_Stars](https://img.shields.io/github/stars/OS4Ed/openSIS-Classic?style=social&color=white)](https://github.com/OS4Ed/openSIS-Classic/stargazers)
+  Open-source student information system supporting demographics, scheduling, attendance tracking, and parent portal access.
 
-## Mailcow
+* **[AlekSIS](https://github.com/AlekSIS/official)** [![GitHub_Stars](https://img.shields.io/github/stars/AlekSIS/official?style=social&color=white)](https://github.com/AlekSIS/official/stargazers)
+  Modern Django-based school information system designed for digital school organization, group calendars, and notification workflows.
 
-[GitHub](https://github.com/mailcow/mailcow-dockerized)
-
-Self-hosted email infrastructure.
-
----
-
-## Mailu
-
-[GitHub](https://github.com/mailu/mailu)
-
-Open-source mail server suite.
-
----
-
-## Listmonk
-
-[GitHub](https://github.com/knadh/listmonk)
-
-High-performance self-hosted newsletter and mailing-list manager.
-
-Excellent for:
-
-* school newsletters
-* parent mailing lists
-* announcements
-* bulk email
+* **[Sentrifugo](https://github.com/sapplica/sentrifugo)** [![GitHub_Stars](https://img.shields.io/github/stars/sapplica/sentrifugo?style=social&color=white)](https://github.com/sapplica/sentrifugo/stargazers)
+  Role-based organizational management system useful as a reference architecture for RBAC and staff communication hierarchies.
 
 ---
 
-# SMS
+## 🔔 Open-Source Notification Infrastructure
 
-Open-source software can provide the application layer, but **SMS delivery still normally requires a telecom/SMS gateway**.
+*Notification engines and orchestration frameworks connecting school triggers to multi-channel delivery, sorted by GitHub star count (descending).*
 
-Possible architectures include:
+* **[n8n](https://github.com/n8n-io/n8n)** [![GitHub_Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers)
+  Fair-code workflow automation platform ideal for connecting SIS triggers (e.g. absences) to notification providers (Twilio, SendGrid, WhatsApp).
 
-```text
-School Platform
-      ↓
-SMS Gateway API
-      ↓
-Mobile Network
-      ↓
-Parent
-```
+* **[Novu](https://github.com/novuhq/novu)** [![GitHub_Stars](https://img.shields.io/github/stars/novuhq/novu?style=social&color=white)](https://github.com/novuhq/novu/stargazers)
+  Unified open-source notification infrastructure supporting in-app inboxes, push, email, SMS, and chat routing workflows with centralized template management.
 
-Open-source / self-hosted components can include:
+* **[ntfy](https://github.com/binwiederhier/ntfy)** [![GitHub_Stars](https://img.shields.io/github/stars/binwiederhier/ntfy?style=social&color=white)](https://github.com/binwiederhier/ntfy/stargazers)
+  Lightweight HTTP-based publish/subscribe push notification server allowing schools to broadcast instant alerts to parent phones and desktops via simple HTTP POST calls.
 
-* [Jasmin SMS Gateway](https://github.com/jookies/jasmin)
-* [Kannel](https://github.com/kannel-sms/kannel)
-* [Gammu](https://github.com/gammu/gammu)
-* [PlaySMS](https://github.com/playsms/playsms)
+* **[Node-RED](https://github.com/node-red/node-red)** [![GitHub_Stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers)
+  Low-code visual event-driven workflow tool for automating school bell notifications, attendance alerts, and emergency alert escalation.
 
----
+* **[Temporal](https://github.com/temporalio/temporal)** [![GitHub_Stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)
+  Durable workflow engine ensuring mission-critical reliability for emergency broadcasts, delivery confirmations, and voice fallback escalations.
 
-# Voice
+* **[Apprise](https://github.com/caronc/apprise)** [![GitHub_Stars](https://img.shields.io/github/stars/caronc/apprise?style=social&color=white)](https://github.com/caronc/apprise/stargazers)
+  Lightweight multi-notification library supporting push alerts across 90+ endpoints (Telegram, Discord, SMS, Email, Pushbullet).
 
-Voice broadcasting is more difficult to self-host completely.
-
-Useful open-source components include:
-
-* [Asterisk](https://github.com/asterisk/asterisk)
-* [FreeSWITCH](https://github.com/signalwire/freeswitch)
-* [Jambonz](https://github.com/jambonz/sbc-in-the-cloud)
-
-Architecture:
-
-```text
-School Alert
-      ↓
-Voice Workflow
-      ↓
-Asterisk / FreeSWITCH
-      ↓
-Telephony Provider
-      ↓
-Parent Phone
-```
+* **[Gotify](https://github.com/gotify/server)** [![GitHub_Stars](https://img.shields.io/github/stars/gotify/server?style=social&color=white)](https://github.com/gotify/server/stargazers)
+  Simple self-hosted push notification server with Android client and REST API for real-time internal school and administrative alerts.
 
 ---
 
-# Open-Source Newsletter & Publishing Platforms
+## 💬 Open-Source Messaging Platforms
 
-## Listmonk
+*Self-hosted messaging systems for teacher-parent chat, grade-level channels, and school staff collaboration, sorted by GitHub star count (descending).*
 
-[GitHub](https://github.com/knadh/listmonk)
+* **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)** [![GitHub_Stars](https://img.shields.io/github/stars/RocketChat/Rocket.Chat?style=social&color=white)](https://github.com/RocketChat/Rocket.Chat/stargazers)
+  Secure open-source communications platform with channels, direct messaging, Omnichannel parent inquiry inboxes, and native mobile apps.
 
-Excellent for high-volume school newsletters.
+* **[Mattermost](https://github.com/mattermost/mattermost)** [![GitHub_Stars](https://img.shields.io/github/stars/mattermost/mattermost?style=social&color=white)](https://github.com/mattermost/mattermost/stargazers)
+  Open-source secure collaboration platform with structured channels, automated webhooks, and strict compliance features for school staff and departments.
 
----
+* **[Chatwoot](https://github.com/chatwoot/chatwoot)** [![GitHub_Stars](https://img.shields.io/github/stars/chatwoot/chatwoot?style=social&color=white)](https://github.com/chatwoot/chatwoot/stargazers)
+  Omnichannel live messaging platform for school support, parent inboxes, WhatsApp, SMS, and website chat integration.
 
-## Mautic
+* **[Zulip](https://github.com/zulip/zulip)** [![GitHub_Stars](https://img.shields.io/github/stars/zulip/zulip?style=social&color=white)](https://github.com/zulip/zulip/stargazers)
+  Unique topic-based threaded messaging platform keeping school announcements and classroom conversations organized and searchable.
 
-[GitHub](https://github.com/mautic/mautic)
+* **[Element Web](https://github.com/element-hq/element-web)** [![GitHub_Stars](https://img.shields.io/github/stars/element-hq/element-web?style=social&color=white)](https://github.com/element-hq/element-web/stargazers)
+  Feature-rich Matrix web and desktop client supporting end-to-end encrypted messaging, voice/video calls, and cross-platform parent-teacher communication.
 
-Open-source marketing automation platform.
+* **[Matterbridge](https://github.com/42wim/matterbridge)** [![GitHub_Stars](https://img.shields.io/github/stars/42wim/matterbridge?style=social&color=white)](https://github.com/42wim/matterbridge/stargazers)
+  Multi-protocol chat bridge connecting Matrix, Discord, Mattermost, Rocket.Chat, Slack, Telegram, and IRC into unified school messaging streams.
 
-Potential uses:
+* **[Matrix Synapse](https://github.com/element-hq/synapse)** [![GitHub_Stars](https://img.shields.io/github/stars/element-hq/synapse?style=social&color=white)](https://github.com/element-hq/synapse/stargazers)
+  Open-source reference Matrix homeserver providing decentralized, interoperable, and federated real-time communication infrastructure.
 
-* segmented parent communication
-* campaigns
-* email journeys
-* engagement tracking
-
----
-
-## Ghost
-
-[GitHub](https://github.com/TryGhost/Ghost)
-
-Useful for:
-
-* school news
-* publications
-* newsletters
-* public communications
+* **[Nextcloud Talk](https://github.com/nextcloud/spreed)** [![GitHub_Stars](https://img.shields.io/github/stars/nextcloud/spreed?style=social&color=white)](https://github.com/nextcloud/spreed/stargazers)
+  Self-hosted chat, video calling, and screen sharing platform integrated directly into the Nextcloud school ecosystem.
 
 ---
 
-## WordPress
+## ✉️ Open-Source Email, SMS & Voice Infrastructure
 
-[GitHub](https://github.com/WordPress/wordpress-develop)
+*Infrastructure components for delivering email blasts, SMS text broadcasts, and automated telephony voice messages, sorted by GitHub star count (descending).*
 
-Useful for:
+### 📬 Email Delivery
+* **[Listmonk](https://github.com/knadh/listmonk)** [![GitHub_Stars](https://img.shields.io/github/stars/knadh/listmonk?style=social&color=white)](https://github.com/knadh/listmonk/stargazers)
+  High-performance self-hosted newsletter and mailing list manager with multi-threading, custom subscriber attributes, and analytics.
+* **[Postal](https://github.com/postalserver/postal)** [![GitHub_Stars](https://img.shields.io/github/stars/postalserver/postal?style=social&color=white)](https://github.com/postalserver/postal/stargazers)
+  Full-featured self-hosted mail delivery platform for transaction and bulk email routing.
+* **[Mailcow: Dockerized](https://github.com/mailcow/mailcow-dockerized)** [![GitHub_Stars](https://img.shields.io/github/stars/mailcow/mailcow-dockerized?style=social&color=white)](https://github.com/mailcow/mailcow-dockerized/stargazers)
+  Complete self-hosted mailserver suite with SOGo webmail, spam protection, and DKIM signing.
+* **[Mailu](https://github.com/mailu/mailu)** [![GitHub_Stars](https://img.shields.io/github/stars/mailu/mailu?style=social&color=white)](https://github.com/mailu/mailu/stargazers)
+  Lightweight and modular Docker-based mail server suite.
 
-* school websites
-* announcements
-* newsletters
-* parent resources
-* event publishing
+### 📱 SMS Gateways
+* **[Jasmin SMS Gateway](https://github.com/jookies/jasmin)** [![GitHub_Stars](https://img.shields.io/github/stars/jookies/jasmin?style=social&color=white)](https://github.com/jookies/jasmin/stargazers)
+  Enterprise open-source SMS gateway with high-throughput SMPP message routing, billing management, and automatic failover.
+* **[RapidPro](https://github.com/rapidpro/rapidpro)** [![GitHub_Stars](https://img.shields.io/github/stars/rapidpro/rapidpro?style=social&color=white)](https://github.com/rapidpro/rapidpro/stargazers)
+  Visual flow-based engine built by UNICEF for creating multi-channel interactive SMS, WhatsApp, and voice chatbots for family engagement.
+* **[PlaySMS](https://github.com/playsms/playsms)** [![GitHub_Stars](https://img.shields.io/github/stars/playsms/playsms?style=social&color=white)](https://github.com/playsms/playsms/stargazers)
+  Flexible Web-based SMS management system supporting multiple SMS gateways.
+* **[Gammu](https://github.com/gammu/gammu)** [![GitHub_Stars](https://img.shields.io/github/stars/gammu/gammu?style=social&color=white)](https://github.com/gammu/gammu/stargazers)
+  Cellular modem and SMS command-line utility for local SIM-based SMS sending.
+* **[Kannel](https://github.com/kannel-sms/kannel)** [![GitHub_Stars](https://img.shields.io/github/stars/kannel-sms/kannel?style=social&color=white)](https://github.com/kannel-sms/kannel/stargazers)
+  High-capacity WAP and SMS gateway widely used for carrier integration.
 
----
-
-## Drupal
-
-[GitHub](https://github.com/drupal/drupal)
-
-Powerful open-source CMS for district/school websites and publishing.
-
----
-
-# Open-Source Collaboration Platforms
-
-| Platform                                                        | Main Use                      |
-| --------------------------------------------------------------- | ----------------------------- |
-| [Mattermost](https://github.com/mattermost/mattermost)          | Internal school communication |
-| [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)        | Messaging                     |
-| [Matrix](https://github.com/element-hq/synapse)                 | Federated messaging           |
-| [Element](https://github.com/element-hq/element-web)            | Matrix client                 |
-| [Zulip](https://github.com/zulip/zulip)                         | Threaded communication        |
-| [Nextcloud Talk](https://github.com/nextcloud/spreed)           | Chat/video                    |
-| [Jitsi Meet](https://github.com/jitsi/jitsi-meet)               | Video communication           |
-| [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton) | Online classes/meetings       |
-
----
-
-# Open-Source Authentication & Identity
-
-A school communication platform needs strong identity management.
-
-## Keycloak
-
-[GitHub](https://github.com/keycloak/keycloak)
-
-Provides:
-
-* SSO
-* OAuth
-* OpenID Connect
-* SAML
-* RBAC
-* identity federation
+### 📞 Voice Telephony
+* **[FreeSWITCH](https://github.com/signalwire/freeswitch)** [![GitHub_Stars](https://img.shields.io/github/stars/signalwire/freeswitch?style=social&color=white)](https://github.com/signalwire/freeswitch/stargazers)
+  Scalable open-source telephony platform routing audio, video, and text for automated voice calling.
+* **[Asterisk](https://github.com/asterisk/asterisk)** [![GitHub_Stars](https://img.shields.io/github/stars/asterisk/asterisk?style=social&color=white)](https://github.com/asterisk/asterisk/stargazers)
+  The world's leading open-source PBX and voice communications toolkit for building automated emergency voice broadcast systems.
+* **[Jambonz](https://github.com/jambonz/sbc-in-the-cloud)**
+  Open-source voice API platform for developers, ideal for integrating SIP trunks into school alert flows.
 
 ---
 
-## Authentik
+## 📰 Open-Source Newsletter & Publishing Platforms
 
-[GitHub](https://github.com/goauthentik/authentik)
+*Content management systems and visual publishing platforms for school news and parent bulletins, sorted by GitHub star count (descending).*
 
-Useful for:
+* **[Ghost](https://github.com/TryGhost/Ghost)** [![GitHub_Stars](https://img.shields.io/github/stars/TryGhost/Ghost?style=social&color=white)](https://github.com/TryGhost/Ghost/stargazers)
+  Modern open-source publishing platform and newsletter system with membership tiers, email subscriptions, and analytics.
 
-* school SSO
-* parent portal authentication
-* staff authentication
-* application access
+* **[Listmonk](https://github.com/knadh/listmonk)** [![GitHub_Stars](https://img.shields.io/github/stars/knadh/listmonk?style=social&color=white)](https://github.com/knadh/listmonk/stargazers)
+  High-speed mailing list manager capable of sending millions of parent newsletters per hour with rich templating.
 
----
+* **[Mautic](https://github.com/mautic/mautic)** [![GitHub_Stars](https://img.shields.io/github/stars/mautic/mautic?style=social&color=white)](https://github.com/mautic/mautic/stargazers)
+  Open-source marketing and communication automation suite supporting segmented parent email campaigns and engagement tracking.
 
-## Authelia
+* **[Drupal](https://github.com/drupal/drupal)** [![GitHub_Stars](https://img.shields.io/github/stars/drupal/drupal?style=social&color=white)](https://github.com/drupal/drupal/stargazers)
+  Enterprise-grade open-source CMS widely utilized by school districts and universities for accessible web publishing and portals.
 
-[GitHub](https://github.com/authelia/authelia)
-
-Self-hosted authentication and authorization layer.
-
----
-
-# Additional Strong Open-Source Options
-
-## School-specific projects
-
-* [Gibbon](https://github.com/GibbonEdu/core)
-* [Fedena](https://github.com/projectfedena/fedena)
-* [OpenEduCat](https://github.com/openeducat/openeducat_erp)
-* [RosarioSIS](https://github.com/francoisjacquet/rosariosis)
-* [Frappe Education](https://github.com/frappe/education)
-* [OpenSIS](https://github.com/OS4Ed/openSIS-Classic)
-* [AlekSIS](https://github.com/AlekSIS/official)
-* [School Notification Management System](https://github.com/fadkeabhi/School-Notification-Managment-System)
-* [School OS](https://github.com/shabirkhan-dev/school-os)
-* [Parent-Teacher Portal](https://github.com/GIT-ARYA/PTPortal)
-* [eCommunicationBook](https://github.com/Bennacci/eCommunicationBook)
-* [SchoolMS](https://github.com/TemiKayode/School-Management-System)
-* [School Management System](https://github.com/crazymodifier/school-management-system)
-
-## Notification infrastructure
-
-* [Novu](https://github.com/novuhq/novu)
-* [Gotify](https://github.com/gotify/server)
-* [ntfy](https://github.com/binwiederhier/ntfy)
-* [Apprise](https://github.com/caronc/apprise)
-* [Node-RED](https://github.com/node-red/node-red)
-* [n8n](https://github.com/n8n-io/n8n)
-* [Temporal](https://github.com/temporalio/temporal)
-
-## Messaging
-
-* [Mattermost](https://github.com/mattermost/mattermost)
-* [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)
-* [Synapse](https://github.com/element-hq/synapse)
-* [Element](https://github.com/element-hq/element-web)
-* [Zulip](https://github.com/zulip/zulip)
-* [Nextcloud Talk](https://github.com/nextcloud/spreed)
-
-## Email / Newsletter
-
-* [Listmonk](https://github.com/knadh/listmonk)
-* [Mautic](https://github.com/mautic/mautic)
-* [Postal](https://github.com/postalserver/postal)
-* [Mailcow](https://github.com/mailcow/mailcow-dockerized)
-* [Mailu](https://github.com/mailu/mailu)
-
-## SMS / Voice
-
-* [Jasmin SMS Gateway](https://github.com/jookies/jasmin)
-* [Kannel](https://github.com/kannel-sms/kannel)
-* [Gammu](https://github.com/gammu/gammu)
-* [PlaySMS](https://github.com/playsms/playsms)
-* [Asterisk](https://github.com/asterisk/asterisk)
-* [FreeSWITCH](https://github.com/signalwire/freeswitch)
-* [Jambonz](https://github.com/jambonz/sbc-in-the-cloud)
-
-## Collaboration
-
-* [Nextcloud](https://github.com/nextcloud/server)
-* [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
-* [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton)
+* **[WordPress](https://github.com/WordPress/wordpress-develop)** [![GitHub_Stars](https://img.shields.io/github/stars/WordPress/wordpress-develop?style=social&color=white)](https://github.com/WordPress/wordpress-develop/stargazers)
+  Versatile open-source CMS powering school websites, announcement blogs, and classroom newsletters with extensive plugin support.
 
 ---
 
-# Commercial Platform → Open-Source Equivalents
+## 👥 Open-Source Collaboration Platforms
 
-| Commercial / Hosted Platform              | Closest Open-Source Options                         | Notes                                                    |
-| ----------------------------------------- | --------------------------------------------------- | -------------------------------------------------------- |
-| **SchoolMessenger**                       | Gibbon + Novu + Jasmin + Asterisk                   | Strong DIY mass-notification architecture                |
-| **Finalsite Messages**                    | Gibbon + WordPress/Drupal + Novu                    | CMS + communication combination                          |
-| **ParentSquare**                          | Gibbon + School Notification System + Novu + Matrix | Two-way family communication requires custom integration |
-| **Apptegy Thrillshare**                   | WordPress/Drupal + Gibbon + Novu                    | Website + app + notification architecture                |
-| **Blackboard Mass Notifications**         | Novu + ntfy + Jasmin + Asterisk                     | Notification infrastructure                              |
-| **Remind**                                | Matrix + Rocket.Chat + Novu + school portal         | Messaging-first alternative                              |
-| **Edlio**                                 | WordPress/Drupal + Gibbon + Novu                    | Website + communication                                  |
-| **SchoolStatus**                          | Gibbon + SIS + Novu + analytics                     | Data-driven family engagement requires integration       |
-| **Smore**                                 | Listmonk + Mautic + WordPress                       | Newsletter/publishing alternative                        |
-| **Konstella**                             | Matrix/Rocket.Chat + Gibbon + Novu                  | Community messaging                                      |
-| **TalkingPoints**                         | Matrix + translation APIs + Novu                    | Multilingual messaging requires additional components    |
-| **ClassDojo**                             | Gibbon + Matrix + Novu                              | Parent/teacher engagement                                |
-| **Bloomz**                                | Gibbon + Rocket.Chat + Novu                         | Communication + school-management stack                  |
-| **SchoolInfoApp**                         | Gibbon + PWA + Novu                                 | School mobile communication                              |
-| **Campus Suite**                          | WordPress/Drupal + Novu                             | CMS + communication                                      |
-| **Generic school communication platform** | Gibbon + Novu + Listmonk + Matrix                   | Strong modular starting point                            |
+*Virtual meeting rooms, video classrooms, and document sharing tools for parents and teachers, sorted by GitHub star count (descending).*
+
+| 📦 Platform | 🌟 GitHub Stars | 🎯 Main Educational Use Case |
+| --- | --- | --- |
+| **[Nextcloud](https://github.com/nextcloud/server)** | [![GitHub_Stars](https://img.shields.io/github/stars/nextcloud/server?style=social&color=white)](https://github.com/nextcloud/server/stargazers) | Self-hosted school cloud for student files, parent permissions, and groupware |
+| **[Jitsi Meet](https://github.com/jitsi/jitsi-meet)** | [![GitHub_Stars](https://img.shields.io/github/stars/jitsi/jitsi-meet?style=social&color=white)](https://github.com/jitsi/jitsi-meet/stargazers) | Encrypted 100% open-source video conferencing for virtual parent-teacher conferences |
+| **[BigBlueButton](https://github.com/bigbluebutton/bigbluebutton)** | [![GitHub_Stars](https://img.shields.io/github/stars/bigbluebutton/bigbluebutton?style=social&color=white)](https://github.com/bigbluebutton/bigbluebutton/stargazers) | Virtual classroom platform with whiteboards, breakout rooms, and remote parent presentations |
+| **[Moodle](https://github.com/moodle/moodle)** | [![GitHub_Stars](https://img.shields.io/github/stars/moodle/moodle?style=social&color=white)](https://github.com/moodle/moodle/stargazers) | World-leading LMS with parent observer accounts, course updates, and notifications |
+| **[Canvas LMS](https://github.com/instructure/canvas-lms)** | [![GitHub_Stars](https://img.shields.io/github/stars/instructure/canvas-lms?style=social&color=white)](https://github.com/instructure/canvas-lms/stargazers) | Open-source core LMS providing parent observer access and syllabus announcements |
 
 ---
 
-# Frameworks for Building Custom School Communication Systems
+## 🔐 Open-Source Authentication & Identity
 
-A complete open-source school communication system can be constructed from several layers.
+*Identity and access management ensuring secure parent logins and FERPA-compliant RBAC, sorted by GitHub star count (descending).*
 
-## 1. Student Information Layer
+* **[Keycloak](https://github.com/keycloak/keycloak)** [![GitHub_Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers)
+  Open-source identity and access management solution providing SSO, OpenID Connect, SAML 2.0, multi-factor authentication (MFA), and role-based access.
 
-The system needs:
+* **[Authelia](https://github.com/authelia/authelia)** [![GitHub_Stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers)
+  Lightweight open-source authentication and authorization server offering two-factor authentication and reverse proxy integration.
+
+* **[Authentik](https://github.com/goauthentik/authentik)** [![GitHub_Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers)
+  Modern, flexible identity provider with self-service password reset, flow builders, and parent portal OAuth2/SAML integrations.
+
+---
+
+## ⭐ Additional Strong Open-Source Options
+
+*Curated ecosystem tools for building comprehensive school communication systems, sorted within each category by GitHub star count (descending).*
+
+### 📱 Mobile & Front-End Frameworks
+* **[Flutter](https://github.com/flutter/flutter)** [![GitHub_Stars](https://img.shields.io/github/stars/flutter/flutter?style=social&color=white)](https://github.com/flutter/flutter/stargazers) - Google's cross-platform UI toolkit for iOS/Android parent apps.
+* **[React Native](https://github.com/facebook/react-native)** [![GitHub_Stars](https://img.shields.io/github/stars/facebook/react-native?style=social&color=white)](https://github.com/facebook/react-native/stargazers) - Native mobile app development framework.
+* **[Ionic](https://github.com/ionic-team/ionic-framework)** [![GitHub_Stars](https://img.shields.io/github/stars/ionic-team/ionic-framework?style=social&color=white)](https://github.com/ionic-team/ionic-framework/stargazers) - Cross-platform mobile and PWA framework.
+* **[Expo](https://github.com/expo/expo)** [![GitHub_Stars](https://img.shields.io/github/stars/expo/expo?style=social&color=white)](https://github.com/expo/expo/stargazers) - Fast React Native development suite and notification service.
+
+### 📅 Scheduling, CRM & Forms
+* **[Twenty](https://github.com/twentyhq/twenty)** [![GitHub_Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers) - Modern CRM for school admissions, student tracking, and family relations.
+* **[Cal.com](https://github.com/calcom/cal.com)** [![GitHub_Stars](https://img.shields.io/github/stars/calcom/cal.com?style=social&color=white)](https://github.com/calcom/cal.com/stargazers) - Open-source scheduling platform for parent-teacher conferences and staff booking.
+* **[Formbricks](https://github.com/formbricks/formbricks)** [![GitHub_Stars](https://img.shields.io/github/stars/formbricks/formbricks?style=social&color=white)](https://github.com/formbricks/formbricks/stargazers) - Privacy-first survey and form suite for parent feedback, permissions, and polls.
+
+### 🌐 Translation Engines (Multilingual Family Support)
+* **[LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)** [![GitHub_Stars](https://img.shields.io/github/stars/LibreTranslate/LibreTranslate?style=social&color=white)](https://github.com/LibreTranslate/LibreTranslate/stargazers) - Free and open-source machine translation engine for real-time message translation.
+* **[Argos Translate](https://github.com/argosopentech/argos-translate)** - Offline open-source translation library.
+* **[Marian NMT](https://github.com/marian-nmt/marian-dev)** - Fast neural machine translation framework in C++.
+
+---
+
+## 🔄 Commercial Platform → Open-Source Equivalents
+
+| Commercial / Hosted Platform | Closest Open-Source Stacks | Practical Integration Notes |
+| --- | --- | --- |
+| **SchoolMessenger** | Gibbon + Novu + Jasmin + Asterisk | Strong DIY mass-notification and emergency broadcast architecture |
+| **Finalsite Messages** | Gibbon + WordPress/Drupal + Novu | Content management + unified multi-channel notifications |
+| **ParentSquare** | Gibbon + School Notification System + Novu + Matrix | Two-way family messaging requires Matrix/Chatwoot bridge with SIS |
+| **Apptegy Thrillshare** | WordPress/Drupal + Expo/Flutter + Novu | Custom branded mobile app + website CMS + push notifications |
+| **Blackboard Mass Notifications** | Novu + ntfy + Jasmin + Asterisk | Multi-channel broadcast infrastructure for institutional alerts |
+| **Remind** | Matrix + Rocket.Chat + Novu + PTPortal | Direct teacher-parent messaging with cell number privacy protection |
+| **Edlio** | WordPress/Drupal + Gibbon + Novu + PWA | Website publishing + parent mobile communication |
+| **SchoolStatus** | Gibbon + SIS + Novu + Grafana / Metabase | Data-driven family engagement and attendance intervention analytics |
+| **Smore** | Listmonk + Mautic + Ghost / WordPress | Rich visual newsletters with recipient open/click tracking |
+| **Konstella** | Matrix / Rocket.Chat + Cal.com + Novu | Community messaging, event calendars, and parent association management |
+| **TalkingPoints** | Matrix + LibreTranslate + Novu + Jasmin | Multilingual two-way SMS and chat translation engine |
+| **ClassDojo** | Gibbon + Matrix + Novu + Mobile App | Classroom behavior points, stories, and parent updates |
+| **Bloomz** | Gibbon + Rocket.Chat + Novu + Cal.com | Unified messaging, calendar signups, and parent engagement |
+| **SchoolInfoApp** | Gibbon + Flutter / Expo + Novu | Branded school mobile application with push notification feeds |
+| **Campus Suite** | WordPress / Drupal + Novu + Apprise | School district CMS and community messaging |
+| **Generic School Communication** | Gibbon + Novu + Listmonk + Matrix | Strong modular starting foundation for self-hosted school districts |
+
+---
+
+## 🛠️ Frameworks for Building Custom School Communication Systems
+
+A production-grade open-source school communication system combines several architectural tiers:
 
 ```text
 School
  ├── Campus
- ├── Grade
- ├── Class
- ├── Student
- ├── Parent
- ├── Guardian
- ├── Teacher
- └── Staff
+ │    ├── Grade Level
+ │    │    ├── Classroom
+ │    │    │    ├── Student
+ │    │    │    │    └── Guardians (Parents / Contacts)
+ │    │    │    └── Teacher / Co-Teachers
+ │    └── Staff & Administration
+ └── Special Cohorts (Bus Routes, Sports Teams, Clubs, Special Education)
 ```
 
-Potential foundations:
-
-* Gibbon
-* Fedena
-* OpenEduCat
-* RosarioSIS
-* Frappe Education
-* OpenSIS
-
----
-
-# 2. Audience Management
-
-A communication platform needs sophisticated targeting.
-
-Examples:
-
 ```text
-All Parents
-      ↓
-Grade 8 Parents
-      ↓
-Grade 8A Parents
-      ↓
-Parents of Students Absent Today
-      ↓
-Parents of Students with Outstanding Fees
-      ↓
-Parents of Bus Route 7
-```
-
-This is one of the most important differences between a generic messaging application and a school communication platform.
-
----
-
-# 3. Communication Engine
-
-The communication engine should support:
-
-```text
-Announcement
-Alert
-Message
-Newsletter
-Survey
-Reminder
-Event
-Emergency
-```
-
-Each communication should contain:
-
-```text
-Audience
-+
-Message
-+
-Channel
-+
-Priority
-+
-Schedule
-+
-Language
-+
-Delivery Policy
+Audience Selection (SIS) ──> Message Composition ──> Multi-Language Translation
+                                                              │
+                                                              ▼
+Delivery Confirmation <── Dispatch Orchestration <── Channel Policy (SMS/Push/Voice/Email)
 ```
 
 ---
 
-# 4. Notification Orchestration
-
-Example:
-
-```text
-Emergency Alert
-       ↓
-Push
-       ↓
-SMS
-       ↓
-Email
-       ↓
-Voice
-       ↓
-Delivery Verification
-       ↓
-Escalation
-```
-
-Novu, Node-RED, n8n and Temporal can provide different parts of this orchestration layer.
-
----
-
-# 5. Translation
-
-Multilingual communication is especially important for K-12 family engagement.
-
-Architecture:
-
-```text
-Teacher writes English message
-          ↓
-Translation Engine
-          ↓
-Bengali
-Hindi
-Spanish
-Arabic
-French
-etc.
-          ↓
-Parent's preferred language
-```
-
-Potential open-source/local AI components include:
-
-* [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)
-* [Argos Translate](https://github.com/argosopentech/argos-translate)
-* [NLLB](https://github.com/facebookresearch/fairseq/tree/main/examples/nllb)
-* [Marian NMT](https://github.com/marian-nmt/marian-dev)
-
----
-
-# 6. Mobile Application
-
-Potential open-source technologies:
-
-* [Flutter](https://github.com/flutter/flutter)
-* [React Native](https://github.com/facebook/react-native)
-* [Expo](https://github.com/expo/expo)
-* [Ionic](https://github.com/ionic-team/ionic-framework)
-
-Parent application:
-
-```text
-Login
- ↓
-My Children
- ↓
-Messages
- ↓
-Announcements
- ↓
-Calendar
- ↓
-Attendance
- ↓
-Events
- ↓
-Emergency Alerts
- ↓
-Teacher Communication
-```
-
----
-
-# 7. Push Notification Layer
-
-Possible technologies:
-
-```text
-FCM
-APNs
-Web Push
-Gotify
-ntfy
-Novu
-```
-
-For self-hosted web push:
-
-```text
-School Backend
-       ↓
-Web Push
-       ↓
-Parent Browser
-```
-
----
-
-# 8. Email Layer
-
-Possible architecture:
-
-```text
-School Platform
-       ↓
-Listmonk / Postal
-       ↓
-SMTP
-       ↓
-Parent
-```
-
----
-
-# 9. SMS Layer
-
-```text
-School Platform
-       ↓
-Novu / Custom API
-       ↓
-Jasmin / Kannel
-       ↓
-Telecom SMS Gateway
-       ↓
-Parent
-```
-
-A telecom/SMS provider is still normally required for nationwide mobile delivery.
-
----
-
-# 10. Voice Layer
-
-```text
-Emergency Alert
-       ↓
-Voice Workflow
-       ↓
-Asterisk / FreeSWITCH
-       ↓
-SIP / Telecom Provider
-       ↓
-Parent Phone
-```
-
----
-
-# 11. Analytics
-
-A communication platform should measure:
-
-```text
-Sent
-Delivered
-Opened
-Clicked
-Read
-Responded
-Bounced
-Failed
-Opted Out
-```
-
-Potential open-source analytics:
-
-* Grafana
-* Metabase
-* Apache Superset
-* Matomo
-* PostHog
-
----
-
-# Reference Architecture
+## 🏛️ Reference Architecture
 
 ```mermaid
 flowchart TD
-
-    SIS[School Information System]
-
-    AUDIENCE[Audience Engine]
-
-    COMMS[Communication Engine]
-
-    WORKFLOW[Notification Workflow]
-
-    EMAIL[Email]
-
-    SMS[SMS]
-
-    PUSH[Push Notification]
-
-    VOICE[Voice]
-
-    APP[Parent Mobile App]
-
+    SIS[School Information System / SIS]
+    AUDIENCE[Audience Segmentation Engine]
+    COMMS[Communication & Message Engine]
+    WORKFLOW[Notification Orchestration - Novu]
+    EMAIL[Email - Listmonk / Postal]
+    SMS[SMS - Jasmin / Gateway]
+    PUSH[Push - Gotify / ntfy]
+    VOICE[Voice - Asterisk / FreeSWITCH]
+    APP[Parent Mobile App - Flutter / Expo]
     WEB[Parent Web Portal]
-
-    CHAT[Two-Way Messaging]
-
-    NEWS[Newsletter]
-
-    ANALYTICS[Analytics]
-
-    AUDIT[Audit Log]
+    CHAT[Two-Way Messaging - Matrix / Chatwoot]
+    NEWS[Newsletters - Listmonk / Ghost]
+    ANALYTICS[Engagement Analytics - Grafana / Metabase]
+    AUDIT[Immutable Audit Log]
 
     SIS --> AUDIENCE
     AUDIENCE --> COMMS
     COMMS --> WORKFLOW
-
     WORKFLOW --> EMAIL
     WORKFLOW --> SMS
     WORKFLOW --> PUSH
@@ -1354,251 +455,109 @@ flowchart TD
 
 ---
 
-# Typical School Communication Workflow
+## 📋 Typical School Communication Workflow
 
 ```mermaid
 flowchart LR
-
-    A[School Event]
-
-    B[Select Audience]
-
-    C[Compose Message]
-
-    D[Translate]
-
-    E[Select Channels]
-
-    F[Send]
-
-    G[Delivery Tracking]
-
-    H[Read / Response]
-
-    I[Analytics]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
+    A[School Event] --> B[Select Audience]
+    B --> C[Compose Message]
+    C --> D[Translate Content]
+    D --> E[Select Channels]
+    E --> F[Send via Gateways]
+    F --> G[Delivery Tracking]
+    G --> H[Read & Reply]
+    H --> I[Engagement Analytics]
 ```
 
 ---
 
-# Emergency Notification Workflow
-
-Emergency notification is one of the most important SchoolMessenger-style functions.
+## 🚨 Emergency Notification Workflow
 
 ```mermaid
 flowchart TD
+    EVENT[Emergency Event / Closure] --> ADMIN[Authorized Administrator]
+    ADMIN --> VERIFY[Verify & Authenticate Alert]
+    VERIFY --> AUDIENCE[Emergency Audience Group]
 
-    EVENT[Emergency Event]
+    AUDIENCE --> PUSH[Instant Mobile Push]
+    AUDIENCE --> SMS[Urgent SMS Broadcast]
+    AUDIENCE --> EMAIL[Detailed Email Alert]
+    AUDIENCE --> VOICE[Robocall Voice Broadcast]
+    AUDIENCE --> APP[School App Banner]
 
-    ADMIN[Authorized Administrator]
-
-    VERIFY[Verify Alert]
-
-    AUDIENCE[Emergency Audience]
-
-    PUSH[Push]
-
-    SMS[SMS]
-
-    EMAIL[Email]
-
-    VOICE[Voice]
-
-    APP[Mobile App]
-
-    DELIVERY[Delivery Monitoring]
-
-    ESCALATE[Escalation]
-
-    AUDIT[Audit Log]
-
-    EVENT --> ADMIN
-    ADMIN --> VERIFY
-    VERIFY --> AUDIENCE
-
-    AUDIENCE --> PUSH
-    AUDIENCE --> SMS
-    AUDIENCE --> EMAIL
-    AUDIENCE --> VOICE
-    AUDIENCE --> APP
-
-    PUSH --> DELIVERY
+    PUSH --> DELIVERY[Delivery Monitoring]
     SMS --> DELIVERY
     EMAIL --> DELIVERY
     VOICE --> DELIVERY
     APP --> DELIVERY
 
-    DELIVERY --> ESCALATE
-    DELIVERY --> AUDIT
+    DELIVERY --> ESCALATE[Automatic Fallback Escalation]
+    DELIVERY --> AUDIT[Compliance Audit Log]
 ```
 
 ---
 
-# Parent-Teacher Messaging Workflow
+## 👨‍🏫 Parent-Teacher Messaging Workflow
 
 ```mermaid
 flowchart LR
-
-    TEACHER[Teacher]
-
-    MESSAGE[Message]
-
-    POLICY[Communication Policy]
-
-    PARENT[Parent]
-
-    REPLY[Parent Reply]
-
-    RECORD[Communication Record]
-
-    SIS[Student Record]
-
-    TEACHER --> MESSAGE
-    MESSAGE --> POLICY
-    POLICY --> PARENT
-    PARENT --> REPLY
-    REPLY --> RECORD
-    RECORD --> SIS
+    TEACHER[Teacher] --> MESSAGE[Direct Message]
+    MESSAGE --> POLICY[Privacy & Contact Policy]
+    POLICY --> PARENT[Parent / Guardian]
+    PARENT --> REPLY[Parent Reply]
+    REPLY --> RECORD[Communication Record]
+    RECORD --> SIS[Student Profile Record]
 ```
-
-A school communication platform should ensure that teacher-parent communication remains associated with the correct student and school context.
 
 ---
 
-# Newsletter Workflow
+## 📰 Newsletter Workflow
 
 ```mermaid
 flowchart TD
-
-    AUTHOR[Teacher / School]
-
-    TEMPLATE[Newsletter Template]
-
-    CONTENT[Content]
-
-    TRANSLATE[Translation]
-
-    AUDIENCE[Audience]
-
-    LISTMONK[Listmonk / Email Engine]
-
-    EMAIL[Email]
-
-    WEB[Web Archive]
-
-    ANALYTICS[Open / Click Analytics]
-
-    AUTHOR --> TEMPLATE
-    TEMPLATE --> CONTENT
-    CONTENT --> TRANSLATE
-    TRANSLATE --> AUDIENCE
-    AUDIENCE --> LISTMONK
-
-    LISTMONK --> EMAIL
-    LISTMONK --> WEB
-
-    EMAIL --> ANALYTICS
+    AUTHOR[Teacher / School Admin] --> TEMPLATE[Responsive Template]
+    TEMPLATE --> CONTENT[Rich Content / Photos]
+    CONTENT --> TRANSLATE[Multilingual Translation]
+    TRANSLATE --> AUDIENCE[Parent Subscriber List]
+    AUDIENCE --> LISTMONK[Listmonk Dispatch Engine]
+    LISTMONK --> EMAIL[Email Delivery]
+    LISTMONK --> WEB[Online Web Archive]
+    EMAIL --> ANALYTICS[Open & Click Rate Tracking]
 ```
-
-Smore is a particularly strong example of the newsletter-first model, supporting distribution through email, websites, social channels and mass-notification systems, as well as multilingual newsletters and engagement analytics.
 
 ---
 
-# Attendance Notification Workflow
+## ⏰ Attendance Notification Workflow
 
 ```mermaid
 flowchart TD
-
-    ATTENDANCE[Attendance Event]
-
-    SIS[Student Information System]
-
-    RULE{Absent?}
-
-    PARENT[Parent]
-
-    PUSH[Push]
-
-    SMS[SMS]
-
-    EMAIL[Email]
-
-    RECORD[Communication Record]
-
-    ATTENDANCE --> SIS
-    SIS --> RULE
-
-    RULE -->|Yes| PARENT
-
-    PARENT --> PUSH
-    PARENT --> SMS
-    PARENT --> EMAIL
-
-    PUSH --> RECORD
+    ATTENDANCE[Attendance Taken] --> SIS[Student Information System]
+    SIS --> RULE{Student Absent?}
+    RULE -->|Yes| PARENT[Parent Notification Triggered]
+    PARENT --> PUSH[Push Notification]
+    PARENT --> SMS[SMS Alert]
+    PARENT --> EMAIL[Email Notice]
+    PUSH --> RECORD[Attendance Verification Log]
     SMS --> RECORD
     EMAIL --> RECORD
 ```
 
-Example:
-
-```text
-Student absent
-      ↓
-Teacher marks absence
-      ↓
-SIS updated
-      ↓
-Communication rule triggered
-      ↓
-Parent receives alert
-```
-
 ---
 
-# Multichannel Notification Architecture
+## 📡 Multichannel Notification Architecture
 
 ```mermaid
 flowchart TD
+    EVENT[School Alert Trigger] --> ENGINE[Communication Core]
+    ENGINE --> POLICY[Channel Selection Policy]
+    POLICY --> PUSH[Push Notification - Gotify / ntfy]
+    POLICY --> EMAIL[Email - Listmonk / Postal]
+    POLICY --> SMS[SMS - Jasmin Gateway]
+    POLICY --> VOICE[Voice Broadcast - Asterisk]
+    POLICY --> INAPP[In-App Notification Feed]
+    POLICY --> CHAT[Chat - Matrix / Chatwoot]
 
-    EVENT[School Event]
-
-    ENGINE[Communication Engine]
-
-    POLICY[Channel Policy]
-
-    PUSH[Push]
-
-    EMAIL[Email]
-
-    SMS[SMS]
-
-    VOICE[Voice]
-
-    INAPP[In-App]
-
-    CHAT[Chat]
-
-    TRACK[Delivery Tracking]
-
-    EVENT --> ENGINE
-    ENGINE --> POLICY
-
-    POLICY --> PUSH
-    POLICY --> EMAIL
-    POLICY --> SMS
-    POLICY --> VOICE
-    POLICY --> INAPP
-    POLICY --> CHAT
-
-    PUSH --> TRACK
+    PUSH --> TRACK[Unified Delivery Telemetry]
     EMAIL --> TRACK
     SMS --> TRACK
     VOICE --> TRACK
@@ -1608,1434 +567,101 @@ flowchart TD
 
 ---
 
-# Communication Priority Model
+## 📊 Capability Matrix
 
-A useful school platform can classify messages as:
-
-```text
-INFORMATION
-     ↓
-ANNOUNCEMENT
-     ↓
-IMPORTANT
-     ↓
-URGENT
-     ↓
-EMERGENCY
-```
-
-Example:
-
-| Priority     | Example                | Channels                   |
-| ------------ | ---------------------- | -------------------------- |
-| Information  | Weekly newsletter      | Email / App                |
-| Announcement | School event           | App / Email                |
-| Important    | Exam schedule change   | Push / Email               |
-| Urgent       | Bus route cancellation | Push / SMS                 |
-| Emergency    | School closure         | Push / SMS / Voice / Email |
+| Capability | SchoolMessenger | ParentSquare | Apptegy | Finalsite | Remind | SchoolStatus | Smore | Gibbon | Novu | Matrix |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Mass Notifications** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Limited | Via modules | ✅ | Via integration |
+| **Two-Way Messaging** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Limited | Via modules | Workflow | ✅ |
+| **Parent Portal** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ |
+| **School Website** | Ecosystem | Ecosystem | ✅ | ✅ | ❌ | ❌ | ❌ | Via modules | ❌ | ❌ |
+| **Mobile App** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Limited | Custom | Via integration | Clients |
+| **SMS Gateway** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Integration | Integration | Via provider | Integration |
+| **Email Blast** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Integration | ✅ | Integration |
+| **Voice Broadcast** | ✅ | ✅ | ✅ | Integration | Limited | ✅ | ❌ | Integration | Via provider | Integration |
+| **Emergency Alerts** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Limited | Custom | ✅ | Custom |
+| **Newsletters** | ✅ | ✅ | ✅ | ✅ | Limited | ✅ | ✅ | Custom | Workflow | Custom |
+| **Translation** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Custom | Provider | Custom |
+| **Audience Filters** | ✅ | ✅ | ✅ | ✅ | Limited | Strong | Limited | ✅ | ✅ | Custom |
+| **Attendance Alerts** | Via SIS | Via SIS | Via SIS | Via SIS | Integration | ✅ | Limited | ✅ | Integration | Custom |
+| **Analytics** | ✅ | ✅ | ✅ | ✅ | Limited | ✅ | ✅ | Via BI | Telemetry | Custom |
+| **Self-Hosted** | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| **Open Source** | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
 
 ---
 
-# Audience Segmentation
+## 📦 Recommended Open-Source Stacks
 
-A mature communication platform should support:
+### 1. 🌟 Best Overall School Communication Stack
+`Gibbon + Novu + Listmonk + Gotify + Jasmin + Keycloak`
+* **Student/Family Records**: Gibbon
+* **Notification Orchestration**: Novu
+* **Newsletters & Bulk Email**: Listmonk
+* **Mobile Push Alerts**: Gotify / ntfy
+* **SMS Gateway**: Jasmin
+* **Identity & SSO**: Keycloak
 
-```text
-District
- ├── School
- │    ├── Grade
- │    │    ├── Class
- │    │    └── Section
- │    │
- │    ├── Teachers
- │    ├── Staff
- │    └── Parents
- │
- └── Special Groups
-      ├── Bus Route
-      ├── Sports Team
-      ├── Club
-      ├── Parents of Absent Students
-      └── Emergency Group
-```
+### 2. 💬 Best Parent-Teacher Messaging Stack
+`Gibbon + Matrix Synapse + Element + Novu`
+* Direct end-to-end encrypted messaging between teachers and families
+* Controlled classroom channels and parent groups
+* Automated notifications for missed chats via Novu
 
-This is critical for avoiding:
+### 3. 🚨 Best Mass-Notification & Emergency Stack
+`Gibbon + Novu + Jasmin + Postal + Asterisk`
+* High-volume simultaneous SMS broadcasts via Jasmin
+* Transactional emergency emails via Postal
+* Automated voice robocall dispatch via Asterisk PBX
 
-> **"Everyone receives everything."**
+### 4. 📰 Best Newsletter & Family Publishing Stack
+`Ghost / WordPress + Listmonk + Mautic`
+* Rich visual story composition and school updates
+* Segmented parent mailing lists and readership engagement analytics
 
----
-
-# Communication Preferences
-
-Each parent should ideally control:
-
-```text
-Preferred Language
-Preferred Email
-Preferred Phone
-Push Notifications
-SMS
-Email
-Voice
-Newsletter
-Emergency Alerts
-Teacher Messages
-```
-
-Example:
-
-```json
-{
-  "parent": "parent-001",
-  "language": "en",
-  "channels": {
-    "push": true,
-    "email": true,
-    "sms": true,
-    "voice": false
-  },
-  "emergency_override": true
-}
-```
-
-Emergency communications should generally follow separate policy rules and should not be treated like ordinary marketing/newsletter opt-outs.
+### 5. 🏢 Best Fully Self-Hosted Enterprise District Stack
+`Gibbon + Novu + Matrix + Listmonk + Gotify + Jasmin + Asterisk + Keycloak + PostgreSQL + Redis + MinIO + Grafana`
+* End-to-end data residency, zero third-party vendor lock-in, and full FERPA/GDPR compliance control.
 
 ---
 
-# Communication Audit Trail
+## 🧩 What Is Still Difficult to Reproduce in Open Source?
 
-Every important message should create an immutable record:
-
-```text
-Message ID
-Sender
-School
-Audience
-Student Context
-Timestamp
-Channel
-Language
-Delivery Status
-Read Status
-Reply
-Escalation
-```
-
-Example:
-
-```text
-Message
-  ↓
-Sent
-  ↓
-Delivered
-  ↓
-Opened
-  ↓
-Read
-  ↓
-Replied
-```
-
-This becomes particularly important for:
-
-* emergency alerts
-* attendance notices
-* safeguarding communication
-* disciplinary communication
-* important academic notices
-* consent-related communication
+1. **Nationwide Telecom Delivery**: Open source provides the routing logic, but actual SMS and voice delivery requires carrier integrations and per-message telephony termination costs.
+2. **Carrier Delivery Verification**: Tracking carrier-level bounces, spam filtering, and telecom opt-out compliance requires active sender reputation management.
+3. **Complex SIS Integration**: Matching dynamic parent-guardian relationships, custodial rights, and contact preferences from commercial legacy SIS systems (PowerSchool, Infinite Campus, Skyward).
+4. **Emergency Concurrency**: Broadcasting tens of thousands of messages within seconds during critical school lockdowns without throttling requires massive cloud queue infrastructure.
+5. **Mobile Store Management**: Maintaining white-label iOS and Android apps across Apple App Store and Google Play review policies.
 
 ---
 
-# Parent Communication Data Model
+## 💡 Why Open Source Is Interesting
 
-```text
-School
-  │
-  ├── Student
-  │      │
-  │      └── Guardian
-  │             │
-  │             ├── Email
-  │             ├── Phone
-  │             ├── Language
-  │             └── Preferences
-  │
-  └── Communication
-         │
-         ├── Announcement
-         ├── Alert
-         ├── Message
-         ├── Newsletter
-         └── Emergency
-```
+* 🔒 **Data Sovereignty**: Keep student records, guardian contact numbers, and communication transcripts completely private on school-owned servers.
+* 💰 **No Per-Student Licensing Fees**: Avoid recurring annual vendor fees that escalate as student enrollment grows.
+* 🛠️ **Customizability**: Tailor communication workflows, approval policies, and language translation models to regional community needs.
+* 🔗 **Open Standards**: Seamlessly connect with modern open-source SIS, LMS, and workflow tools without proprietary vendor lock-in.
 
 ---
 
-# Communication Security
+## 📈 Star History
 
-A production school communication platform should provide:
-
-```text
-Authentication
-+
-RBAC
-+
-MFA
-+
-Encryption
-+
-Audit Logging
-+
-Consent
-+
-Data Minimization
-+
-Access Controls
-+
-Retention Policies
-+
-Secure Messaging
-```
-
-Potential identity components:
-
-* Keycloak
-* Authentik
-* Authelia
-
-Potential infrastructure:
-
-* PostgreSQL
-* Redis
-* MinIO
-* OpenSearch
-* Vault/OpenBao
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-School-Communication&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-School-Communication&type=date&legend=top-left)
 
 ---
 
-# Open-Source School Communication Stack: Minimal
+## 🤝 How to Contribute
 
-```text
-Gibbon
-   +
-Novu
-   +
-Listmonk
-   +
-Gotify
-```
+Contributions and suggestions are welcome! Here is how you can help:
 
-Best for:
+* ➕ Add new open-source school communication tools or parent portal projects
+* 📝 Document carrier SMS and voice PBX configurations for school alerts
+* 🌐 Share open-source multilingual translation pipelines
+* 🧪 Contribute architectural workflows, security guidelines, and FERPA/GDPR best practices
 
-* small schools
-* private schools
-* pilot deployments
-* self-hosted environments
+Please see the contribution guidelines or submit a pull request!
 
 ---
 
-# Open-Source School Communication Stack: Messaging-Centric
+## ⚖️ Disclaimer & Compliance
 
-```text
-Gibbon
-   +
-Matrix / Synapse
-   +
-Element
-   +
-Novu
-```
-
-Best for:
-
-* two-way parent-teacher messaging
-* school communities
-* teacher groups
-* controlled school chat
-
----
-
-# Open-Source School Communication Stack: Mass Notification
-
-```text
-Gibbon
-   +
-Novu
-   +
-Jasmin
-   +
-Postal / Mailcow
-   +
-Asterisk
-```
-
-Provides:
-
-```text
-School Data
-   ↓
-Communication
-   ↓
-SMS
-Email
-Voice
-```
-
----
-
-# Open-Source Newsletter Stack
-
-```text
-WordPress / Drupal
-        +
-Listmonk
-        +
-Mautic
-        +
-PostgreSQL
-```
-
-Useful for:
-
-* school newsletters
-* district newsletters
-* weekly updates
-* parent campaigns
-* event communications
-
----
-
-# Open-Source Full School Communication Stack
-
-```text
-                    SCHOOL SIS
-                       │
-          ┌────────────┼────────────┐
-          ↓            ↓            ↓
-       Gibbon       OpenEduCat    Frappe
-          │
-          ↓
-    Audience Engine
-          │
-          ↓
-   Communication Engine
-          │
-          ↓
-        Novu
-          │
-   ┌──────┼────────┬─────────┐
-   ↓      ↓        ↓         ↓
- Push   Email      SMS      Voice
-   │      │        │         │
- Gotify  Listmonk Jasmin   Asterisk
-   │      │        │         │
-   └──────┴────────┴─────────┘
-          │
-          ↓
-      Parent App
-          │
-          ↓
-      Analytics
-```
-
----
-
-# Capability Matrix
-
-| Capability             | SchoolMessenger |  ParentSquare | Apptegy |        Finalsite |          Remind | SchoolStatus |           Smore |            Gibbon |               Novu |          Matrix |
-| ---------------------- | --------------: | ------------: | ------: | ---------------: | --------------: | -----------: | --------------: | ----------------: | -----------------: | --------------: |
-| Mass notifications     |               ✅ |             ✅ |       ✅ |                ✅ |               ✅ |            ✅ |         Limited |       Via modules |                  ✅ | Via integration |
-| Two-way messaging      |               ✅ |             ✅ |       ✅ |                ✅ |               ✅ |            ✅ |         Limited |       Via modules |           Workflow |               ✅ |
-| Parent portal          |               ✅ |             ✅ |       ✅ |                ✅ |               ✅ |            ✅ |               ❌ |                 ✅ |                  ❌ |               ❌ |
-| School website         |   Via ecosystem | Via ecosystem |       ✅ |                ✅ |               ❌ |            ❌ |               ❌ |       Via modules |                  ❌ |               ❌ |
-| Mobile app             |               ✅ |             ✅ |       ✅ |                ✅ |               ✅ |            ✅ |         Limited | Via customization |    Via integration |         Clients |
-| SMS                    |               ✅ |             ✅ |       ✅ |                ✅ |               ✅ |            ✅ | Via integration |   Via integration |       Via provider | Via integration |
-| Email                  |               ✅ |             ✅ |       ✅ |                ✅ |               ✅ |            ✅ |               ✅ |   Via integration |                  ✅ | Via integration |
-| Voice                  |               ✅ |             ✅ |       ✅ | Via integrations |         Limited |            ✅ |               ❌ |   Via integration |       Via provider | Via integration |
-| Emergency alerts       |               ✅ |             ✅ |       ✅ |                ✅ |               ✅ |            ✅ |         Limited |            Custom |                  ✅ |          Custom |
-| Newsletters            |               ✅ |             ✅ |       ✅ |                ✅ |         Limited |            ✅ |               ✅ |            Custom |           Workflow |          Custom |
-| Translation            |               ✅ |             ✅ |       ✅ |                ✅ |               ✅ |            ✅ |               ✅ |            Custom | Provider-dependent |          Custom |
-| Audience segmentation  |               ✅ |             ✅ |       ✅ |                ✅ |         Limited |       Strong |         Limited |                 ✅ |                  ✅ |          Custom |
-| Attendance integration |         Via SIS |       Via SIS | Via SIS |          Via SIS | Via integration |            ✅ |         Limited |                 ✅ |    Via integration |          Custom |
-| Analytics              |               ✅ |             ✅ |       ✅ |                ✅ |         Limited |            ✅ |               ✅ |            Via BI |      Via telemetry |          Custom |
-| Self-hosted            |               ❌ |             ❌ |       ❌ |                ❌ |               ❌ |            ❌ |               ❌ |                 ✅ |                  ✅ |               ✅ |
-| Open source            |               ❌ |             ❌ |       ❌ |                ❌ |               ❌ |            ❌ |               ❌ |                 ✅ |                  ✅ |               ✅ |
-
----
-
-# Recommended Open-Source Stacks
-
-## 1. Best Overall School Communication Stack
-
-```text
-Gibbon
-+
-Novu
-+
-Listmonk
-+
-Gotify
-+
-Jasmin
-+
-Keycloak
-```
-
-Why:
-
-```text
-Gibbon
- ↓
-School / Parent / Student Data
-
-Novu
- ↓
-Notification Orchestration
-
-Listmonk
- ↓
-Newsletter
-
-Gotify
- ↓
-Push
-
-Jasmin
- ↓
-SMS
-
-Keycloak
- ↓
-Identity
-```
-
----
-
-# 2. Best Parent-Teacher Messaging Stack
-
-```text
-Gibbon
-+
-Matrix / Synapse
-+
-Element
-+
-Novu
-```
-
-Best for:
-
-* direct messaging
-* parent-teacher communication
-* class groups
-* school communities
-
----
-
-# 3. Best Mass-Notification Stack
-
-```text
-Gibbon
-+
-Novu
-+
-Jasmin
-+
-Postal
-+
-Asterisk
-```
-
-Best for:
-
-* emergency alerts
-* school closures
-* transportation alerts
-* weather alerts
-* attendance notifications
-
----
-
-# 4. Best Newsletter Stack
-
-```text
-WordPress
-+
-Listmonk
-+
-Mautic
-+
-PostgreSQL
-```
-
-Best for:
-
-* weekly newsletters
-* district communications
-* school publications
-* campaigns
-
----
-
-# 5. Best Fully Self-Hosted Stack
-
-```text
-Gibbon
-+
-Novu
-+
-Matrix
-+
-Listmonk
-+
-Gotify
-+
-Jasmin
-+
-Asterisk
-+
-Keycloak
-+
-PostgreSQL
-+
-Redis
-+
-MinIO
-+
-Grafana
-```
-
-This provides:
-
-```text
-SIS
-+
-Messaging
-+
-Notifications
-+
-Email
-+
-SMS
-+
-Voice
-+
-Push
-+
-Identity
-+
-Storage
-+
-Analytics
-```
-
----
-
-# 6. Best Lightweight School Stack
-
-For a small school:
-
-```text
-Gibbon
-+
-Novu
-+
-Listmonk
-+
-Gotify
-```
-
-This avoids the complexity of deploying a full telecom/voice stack.
-
----
-
-# 7. Best Open-Source District Architecture
-
-```text
-                    DISTRICT
-                       │
-             ┌─────────┴─────────┐
-             ↓                   ↓
-          SCHOOL 1            SCHOOL 2
-             │                   │
-          SCHOOL 3            SCHOOL 4
-             │                   │
-             └─────────┬─────────┘
-                       ↓
-               Central SIS
-                       ↓
-               Audience Engine
-                       ↓
-            Communication Engine
-                       ↓
-                     Novu
-                       │
-      ┌────────────────┼────────────────┐
-      ↓                ↓                ↓
-    Email             SMS              Push
-      │                │                │
-   Listmonk          Jasmin           Gotify
-                       │
-                     Voice
-                       │
-                    Asterisk
-```
-
----
-
-# What Is Still Difficult to Reproduce in Open Source?
-
-Open-source software can reproduce much of the technical functionality, but several parts remain challenging.
-
-## 1. Nationwide SMS/Voice Delivery
-
-The software can manage:
-
-```text
-Message
- ↓
-Queue
- ↓
-Routing
- ↓
-Retry
- ↓
-Delivery Status
-```
-
-but actual telecom delivery normally requires:
-
-```text
-SMS Carrier
-or
-Voice Carrier
-```
-
-Therefore:
-
-> **Open source can replace the communication software layer, but it does not eliminate telecom infrastructure costs.**
-
----
-
-# 2. Emergency Broadcast Reliability
-
-SchoolMessenger-style emergency communication requires extremely high reliability.
-
-The system must handle:
-
-```text
-Millions of recipients
-+
-Simultaneous delivery
-+
-Retries
-+
-Carrier failures
-+
-Email failures
-+
-Push failures
-+
-Voice fallback
-```
-
-This is significantly harder than sending ordinary notifications.
-
----
-
-# 3. Family Identity Matching
-
-A school communication platform needs to know:
-
-```text
-Student
- ↓
-Parent
- ↓
-Guardian
- ↓
-Phone
- ↓
-Email
- ↓
-Language
- ↓
-School
- ↓
-Class
-```
-
-This information generally comes from the SIS.
-
-Maintaining accurate parent/student relationships is therefore a core challenge.
-
----
-
-# 4. Audience Segmentation
-
-A mature platform can dynamically generate audiences such as:
-
-```text
-Parents of Grade 8
-+
-Parents of Students Absent Today
-+
-Parents on Bus Route 14
-+
-Parents of Students with Upcoming Exams
-```
-
-This requires integration with:
-
-* SIS
-* attendance
-* transportation
-* academic systems
-* calendar
-* student records
-
----
-
-# 5. Multilingual Communication
-
-Simple translation is easy.
-
-High-quality school communication requires:
-
-```text
-Translation
-+
-Context
-+
-Names
-+
-School Terminology
-+
-Safety Terminology
-+
-Correct Formatting
-```
-
-A production system should also store:
-
-```text
-Original Message
-+
-Translated Message
-+
-Translation Engine
-+
-Translation Timestamp
-```
-
----
-
-# 6. Parent Adoption
-
-Technology is not enough.
-
-Parents need:
-
-```text
-Easy Registration
-+
-Simple Login
-+
-Reliable Notifications
-+
-Language Support
-+
-Low Data Usage
-+
-Accessible Web
-+
-Mobile Support
-```
-
-This is one reason why mature commercial platforms can be difficult to reproduce purely through software.
-
----
-
-# 7. Communication Governance
-
-Schools need policies around:
-
-```text
-Who can message whom?
-Who can send emergency alerts?
-Can teachers contact parents directly?
-Can parents contact teachers?
-What messages require approval?
-How long are messages retained?
-Who can export communication records?
-```
-
-This requires both:
-
-```text
-Software
-+
-Institutional Policy
-```
-
----
-
-# 8. Compliance & Privacy
-
-School systems can contain sensitive student and family information.
-
-A production platform should consider:
-
-* FERPA
-* COPPA
-* GDPR where applicable
-* local education privacy laws
-* accessibility requirements
-* data retention
-* parental rights
-* audit requirements
-
-Open-source software does not automatically make a deployment compliant.
-
-Compliance depends on:
-
-```text
-Software
-+
-Configuration
-+
-Infrastructure
-+
-Policies
-+
-Access Control
-+
-Data Processing
-+
-Contracts
-+
-Operational Procedures
-```
-
----
-
-# 9. AI-Assisted Communication
-
-Modern school platforms are increasingly moving toward:
-
-```text
-AI Message Drafting
-+
-Translation
-+
-Tone Adjustment
-+
-Message Summarization
-+
-Audience Recommendation
-+
-Engagement Prediction
-```
-
-An open-source implementation could use:
-
-* Ollama
-* vLLM
-* LlamaIndex
-* LangChain
-* local/open-weight LLMs
-
-Potential workflow:
-
-```text
-Teacher Input
-      ↓
-AI Draft
-      ↓
-Safety / Policy Check
-      ↓
-Teacher Approval
-      ↓
-Translation
-      ↓
-Parent Delivery
-```
-
-Human approval should remain important for sensitive school communications.
-
----
-
-# Why Open Source Is Interesting
-
-The strongest opportunity is not necessarily to reproduce ParentSquare or SchoolMessenger as a single application.
-
-Instead, schools can construct a modular:
-
-> **Open-Source Family Engagement Platform**
-
-around:
-
-```text
-SIS
-+
-Communication
-+
-Notifications
-+
-Messaging
-+
-Newsletter
-+
-Mobile App
-+
-Analytics
-```
-
-A modular architecture can provide greater control over:
-
-* student data
-* parent data
-* communication history
-* notification infrastructure
-* application design
-* integrations
-* hosting
-* costs
-* data residency
-
----
-
-# Open-Source School Communication Ecosystem
-
-```text
-                 SCHOOL DATA
-                      │
-       ┌──────────────┼──────────────┐
-       ↓              ↓              ↓
-    Gibbon        OpenEduCat     Frappe
-       │
-       ↓
- AUDIENCE ENGINE
-       │
-       ↓
- COMMUNICATION ENGINE
-       │
-       ↓
-      NOVU
-       │
- ┌─────┼──────┬──────┬──────┐
- ↓     ↓      ↓      ↓      ↓
-Push  Email   SMS   Voice  Chat
- ↓     ↓      ↓      ↓      ↓
-Gotify Listmonk Jasmin Asterisk Matrix
-       │
-       ↓
- PARENT EXPERIENCE
-       │
- ┌─────┼────────┐
- ↓     ↓        ↓
-Web   Mobile   Email
-       │
-       ↓
-   ANALYTICS
-```
-
----
-
-# Best Open-Source Projects by Use Case
-
-| Use Case                        | Recommended Projects                  |
-| ------------------------------- | ------------------------------------- |
-| School communication foundation | Gibbon                                |
-| School management               | Gibbon, OpenEduCat, Fedena            |
-| Parent/student database         | Gibbon, OpenEduCat, Frappe Education  |
-| Direct school notification      | School Notification Management System |
-| Parent-teacher portal           | PTPortal                              |
-| Digital communication book      | eCommunicationBook                    |
-| Notification orchestration      | Novu                                  |
-| Push notifications              | Gotify, ntfy                          |
-| Workflow automation             | n8n, Node-RED                         |
-| Reliable workflows              | Temporal                              |
-| Parent messaging                | Matrix, Rocket.Chat                   |
-| Staff messaging                 | Mattermost, Zulip                     |
-| Email                           | Postal, Mailcow, Mailu                |
-| Newsletter                      | Listmonk, Mautic                      |
-| SMS                             | Jasmin, Kannel, PlaySMS               |
-| Voice                           | Asterisk, FreeSWITCH                  |
-| School website                  | WordPress, Drupal                     |
-| Mobile application              | Flutter, React Native, Expo           |
-| Translation                     | LibreTranslate, Argos Translate       |
-| Authentication                  | Keycloak, Authentik                   |
-| Analytics                       | Grafana, Metabase, Superset           |
-| Video communication             | Jitsi, BigBlueButton                  |
-| File collaboration              | Nextcloud                             |
-| Database                        | PostgreSQL                            |
-| Cache / queues                  | Redis                                 |
-| Object storage                  | MinIO                                 |
-
----
-
-# Practical Full Open-Source School Communication Stack
-
-```text
-                         SCHOOL
-                            │
-                            ↓
-                     ┌─────────────┐
-                     │    Gibbon   │
-                     │     SIS     │
-                     └──────┬──────┘
-                            │
-                            ↓
-                    Audience Engine
-                            │
-                            ↓
-                  Communication Engine
-                            │
-                            ↓
-                          Novu
-                            │
-       ┌────────────────────┼─────────────────────┐
-       ↓                    ↓                     ↓
-     Push                  Email                  SMS
-       │                    │                     │
-    Gotify               Listmonk              Jasmin
-       │                    │                     │
-       └────────────────────┼─────────────────────┘
-                            ↓
-                         Parents
-                            │
-                 ┌──────────┼──────────┐
-                 ↓          ↓          ↓
-               Mobile      Web       Email
-                            │
-                            ↓
-                       Messaging
-                            │
-                       Matrix/Element
-                            │
-                            ↓
-                         Analytics
-                            │
-                   Grafana / Metabase
-```
-
----
-
-# School Communication Maturity Model
-
-```text
-Level 1
----------
-Email / SMS
-
-        ↓
-
-Level 2
----------
-School Announcements
-
-        ↓
-
-Level 3
----------
-Parent Portal
-
-        ↓
-
-Level 4
----------
-Two-Way Messaging
-
-        ↓
-
-Level 5
----------
-Multichannel Notifications
-
-        ↓
-
-Level 6
----------
-Audience Segmentation
-
-        ↓
-
-Level 7
----------
-SIS-Integrated Communication
-
-        ↓
-
-Level 8
----------
-Personalized Family Engagement
-
-        ↓
-
-Level 9
----------
-AI-Assisted Communication
-```
-
-The critical transition is from:
-
-```text
-Sending Messages
-```
-
-to:
-
-```text
-Sending the Right Message
-to the Right Family
-through the Right Channel
-at the Right Time.
-```
-
----
-
-# Recommended Open-Source Shortlist
-
-## Tier 1 — School Platforms
-
-1. [Gibbon](https://github.com/GibbonEdu/core)
-2. [OpenEduCat](https://github.com/openeducat/openeducat_erp)
-3. [Fedena](https://github.com/projectfedena/fedena)
-4. [Frappe Education](https://github.com/frappe/education)
-5. [RosarioSIS](https://github.com/francoisjacquet/rosariosis)
-6. [OpenSIS](https://github.com/OS4Ed/openSIS-Classic)
-7. [AlekSIS](https://github.com/AlekSIS/official)
-
-## Tier 2 — Communication-Specific Projects
-
-8. [School Notification Management System](https://github.com/fadkeabhi/School-Notification-Managment-System)
-9. [School OS](https://github.com/shabirkhan-dev/school-os)
-10. [PTPortal](https://github.com/GIT-ARYA/PTPortal)
-11. [eCommunicationBook](https://github.com/Bennacci/eCommunicationBook)
-12. [SchoolMS](https://github.com/TemiKayode/School-Management-System)
-
-## Tier 3 — Notification Infrastructure
-
-13. [Novu](https://github.com/novuhq/novu)
-14. [Gotify](https://github.com/gotify/server)
-15. [ntfy](https://github.com/binwiederhier/ntfy)
-16. [Apprise](https://github.com/caronc/apprise)
-17. [n8n](https://github.com/n8n-io/n8n)
-18. [Node-RED](https://github.com/node-red/node-red)
-19. [Temporal](https://github.com/temporalio/temporal)
-
-## Tier 4 — Messaging
-
-20. [Matrix Synapse](https://github.com/element-hq/synapse)
-21. [Element](https://github.com/element-hq/element-web)
-22. [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)
-23. [Mattermost](https://github.com/mattermost/mattermost)
-24. [Zulip](https://github.com/zulip/zulip)
-25. [Nextcloud Talk](https://github.com/nextcloud/spreed)
-
-## Tier 5 — Delivery Infrastructure
-
-26. [Listmonk](https://github.com/knadh/listmonk)
-27. [Postal](https://github.com/postalserver/postal)
-28. [Mailcow](https://github.com/mailcow/mailcow-dockerized)
-29. [Jasmin](https://github.com/jookies/jasmin)
-30. [Kannel](https://github.com/kannel-sms/kannel)
-31. [PlaySMS](https://github.com/playsms/playsms)
-32. [Asterisk](https://github.com/asterisk/asterisk)
-33. [FreeSWITCH](https://github.com/signalwire/freeswitch)
-
----
-
-# Open-Source vs Commercial Strategy
-
-The most practical comparison is:
-
-```text
-COMMERCIAL
-─────────────────────────────
-ParentSquare
-SchoolMessenger
-Apptegy
-Finalsite
-SchoolStatus
-Remind
-Edlio
-Smore
-Konstella
-
-             ↓
-
-OPEN-SOURCE COMPOSABLE
-─────────────────────────────
-Gibbon
-+
-Novu
-+
-Matrix
-+
-Listmonk
-+
-Gotify
-+
-Jasmin
-+
-Asterisk
-+
-Keycloak
-+
-Grafana
-```
-
-The commercial platforms provide the advantage of:
-
-```text
-One Vendor
-+
-One Interface
-+
-Managed Infrastructure
-+
-Support
-+
-Telecom Integrations
-+
-Prebuilt School Integrations
-+
-Operational Reliability
-```
-
-The open-source approach provides:
-
-```text
-Data Ownership
-+
-Self Hosting
-+
-Customization
-+
-No Vendor Lock-In
-+
-Extensibility
-+
-Integration Freedom
-+
-Potentially Lower Software Licensing Cost
-```
-
----
-
-# Conclusion
-
-The school communication market is moving beyond simple email and SMS toward integrated **family engagement platforms**.
-
-The modern architecture looks like:
-
-```text
-School Data
-    ↓
-Audience Segmentation
-    ↓
-Communication
-    ↓
-Translation
-    ↓
-Notification Orchestration
-    ↓
-Push / Email / SMS / Voice
-    ↓
-Parent Experience
-    ↓
-Analytics
-```
-
-The commercial leaders — **SchoolMessenger, ParentSquare, Apptegy Thrillshare, Finalsite, SchoolStatus, Remind, Edlio, Smore and Konstella** — increasingly combine several of these capabilities in one hosted environment.
-
-The open-source ecosystem is different.
-
-There is currently no single universally dominant open-source equivalent of ParentSquare or SchoolMessenger. Instead, the strongest approach is composable:
-
-```text
-Gibbon
-+
-Novu
-+
-Matrix
-+
-Listmonk
-+
-Gotify
-+
-Jasmin
-+
-Asterisk
-+
-Keycloak
-```
-
-with optional:
-
-```text
-OpenEduCat
-Frappe Education
-MISP-like data integration
-Nextcloud
-Jitsi
-Grafana
-Metabase
-LibreTranslate
-```
-
-The most important open-source projects to evaluate first are therefore:
-
-> **Gibbon + Novu + Matrix + Listmonk + Gotify + Jasmin + Asterisk + Keycloak.**
-
-This combination can form the basis of a self-hosted platform covering:
-
-```text
-School Data
-+
-Parent Directory
-+
-Teacher Communication
-+
-Two-Way Messaging
-+
-Mass Notifications
-+
-Emergency Alerts
-+
-Push Notifications
-+
-Email
-+
-SMS
-+
-Voice
-+
-Newsletters
-+
-Translation
-+
-Analytics
-```
-
-The most interesting opportunity is to turn these components into a unified:
-
-> **Open-Source School Family Engagement Platform**
-
-that provides:
-
-```text
-Identify
- ↓
-Segment
- ↓
-Compose
- ↓
-Translate
- ↓
-Approve
- ↓
-Deliver
- ↓
-Track
- ↓
-Engage
- ↓
-Analyze
-```
-
-without requiring a school or district to surrender control of its communication infrastructure and family data.
-
----
-
-# How to Contribute
-
-Useful contributions include:
-
-* adding school communication platforms
-* adding open-source projects
-* adding parent-teacher messaging projects
-* documenting SMS integrations
-* documenting voice integrations
-* adding notification providers
-* adding multilingual tools
-* creating school communication workflows
-* adding emergency-alert examples
-* adding attendance-notification workflows
-* documenting SIS integrations
-* creating parent mobile applications
-* adding accessibility improvements
-* documenting FERPA/GDPR considerations
-* adding communication analytics
-* creating audience-segmentation modules
-* adding school-specific templates
-* improving authentication
-* adding delivery-retry mechanisms
-* benchmarking notification infrastructure
-
-Pull requests are welcome.
-
----
-
-# Disclaimer
-
-This README is an ecosystem overview rather than a product endorsement, security certification, legal opinion or guarantee of production readiness.
-
-Open-source availability, licensing, project activity, supported integrations and features can change.
-
-Before deploying an open-source school communication platform, evaluate:
-
-* student-data privacy
-* parent-data privacy
-* authentication
-* RBAC
-* MFA
-* encryption
-* audit logging
-* data retention
-* consent management
-* emergency-alert reliability
-* SMS delivery
-* voice delivery
-* email deliverability
-* push notification reliability
-* multilingual support
-* accessibility
-* mobile application security
-* SIS integration
-* disaster recovery
-* high availability
-* backup
-* monitoring
-* incident response
-
-**Open-source software does not automatically make a school communication system FERPA, COPPA, GDPR or otherwise legally compliant.**
-
-Compliance depends on:
-
-```text
-Software
-+
-Configuration
-+
-Infrastructure
-+
-Policies
-+
-Access Control
-+
-Data Processing
-+
-Vendor / Telecom Agreements
-+
-Operational Procedures
-```
-
-> **The strongest open-source strategy is therefore not to search for a single "free ParentSquare." It is to assemble a modular school communication ecosystem in which Gibbon or another SIS provides the school-family data model, Novu provides notification orchestration, Matrix provides messaging, Listmonk provides newsletters, Gotify/ntfy provide push notifications, Jasmin/Kannel provide SMS integration and Asterisk/FreeSWITCH provide voice infrastructure.**
-
-**School communication ultimately succeeds when the right information reaches the right family through the right channel at the right time.**
-
+This repository is a curated community directory for educational and architectural research purposes. It does not constitute legal advice or formal endorsement. Educational institutions must ensure that any self-hosted or SaaS deployment complies with applicable student privacy regulations, including **FERPA, COPPA, CSPC, and GDPR**.

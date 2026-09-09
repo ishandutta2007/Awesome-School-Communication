@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#818cf8;#c084fc;#38bdf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#818cf8">
+        <animate attributeName="stop-color" values="#818cf8;#c084fc;#38bdf8;#818cf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <linearGradient id="glow-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0.2" />
+    </linearGradient>
+    <radialGradient id="hub-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="purple-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+    <filter id="blur-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <style>
+      .pulse-circle {
+        animation: pulse 3s ease-in-out infinite alternate;
+      }
+      .pulse-delay-1 {
+        animation: pulse 3.5s ease-in-out 0.8s infinite alternate;
+      }
+      .pulse-delay-2 {
+        animation: pulse 4s ease-in-out 1.5s infinite alternate;
+      }
+      .signal-line {
+        stroke-dasharray: 6, 6;
+        animation: dash 20s linear infinite;
+      }
+      .float-text {
+        animation: float 4s ease-in-out infinite alternate;
+      }
+      @keyframes pulse {
+        0% { transform: scale(0.96); opacity: 0.7; }
+        100% { transform: scale(1.04); opacity: 1; }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -200; }
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-4px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="400" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Ambient Glow Spheres -->
+  <circle cx="200" cy="120" r="180" fill="url(#hub-glow)" filter="url(#blur-glow)" />
+  <circle cx="1000" cy="280" r="220" fill="url(#purple-glow)" filter="url(#blur-glow)" />
+  <circle cx="600" cy="200" r="280" fill="url(#hub-glow)" filter="url(#blur-glow)" />
+
+  <!-- Background Decorative Grid Dots -->
+  <g opacity="0.12" fill="#94a3b8">
+    <circle cx="100" cy="60" r="1.5" /><circle cx="160" cy="60" r="1.5" /><circle cx="220" cy="60" r="1.5" /><circle cx="280" cy="60" r="1.5" />
+    <circle cx="920" cy="60" r="1.5" /><circle cx="980" cy="60" r="1.5" /><circle cx="1040" cy="60" r="1.5" /><circle cx="1100" cy="60" r="1.5" />
+    <circle cx="100" cy="340" r="1.5" /><circle cx="160" cy="340" r="1.5" /><circle cx="220" cy="340" r="1.5" /><circle cx="280" cy="340" r="1.5" />
+    <circle cx="920" cy="340" r="1.5" /><circle cx="980" cy="340" r="1.5" /><circle cx="1040" cy="340" r="1.5" /><circle cx="1100" cy="340" r="1.5" />
+  </g>
+
+  <!-- Constellation Connections -->
+  <g stroke="#38bdf8" stroke-opacity="0.25" stroke-width="1.5" class="signal-line">
+    <line x1="220" y1="180" x2="380" y2="130" />
+    <line x1="220" y1="180" x2="350" y2="270" />
+    <line x1="380" y1="130" x2="600" y2="110" />
+    <line x1="350" y1="270" x2="600" y2="290" />
+    <line x1="600" y1="110" x2="820" y2="130" />
+    <line x1="600" y1="290" x2="850" y2="270" />
+    <line x1="820" y1="130" x2="980" y2="180" />
+    <line x1="850" y1="270" x2="980" y2="180" />
+  </g>
+
+  <!-- Network Satellite Nodes (Left) -->
+  <g class="pulse-delay-1" transform-origin="220 180">
+    <circle cx="220" cy="180" r="32" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+    <text x="220" y="186" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="20" text-anchor="middle" fill="#38bdf8">🏫</text>
+    <text x="220" y="226" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#94a3b8" letter-spacing="1">SCHOOL</text>
+  </g>
+
+  <g class="pulse-circle" transform-origin="380 130">
+    <circle cx="380" cy="130" r="26" fill="#1e293b" stroke="#818cf8" stroke-width="1.8" />
+    <text x="380" y="136" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="17" text-anchor="middle" fill="#818cf8">👨‍🏫</text>
+    <text x="380" y="168" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="10" font-weight="600" text-anchor="middle" fill="#94a3b8" letter-spacing="0.5">TEACHER</text>
+  </g>
+
+  <g class="pulse-delay-2" transform-origin="350 270">
+    <circle cx="350" cy="270" r="26" fill="#1e293b" stroke="#34d399" stroke-width="1.8" />
+    <text x="350" y="276" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="17" text-anchor="middle" fill="#34d399">👨‍👩‍👧</text>
+    <text x="350" y="308" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="10" font-weight="600" text-anchor="middle" fill="#94a3b8" letter-spacing="0.5">PARENTS</text>
+  </g>
+
+  <!-- Network Satellite Nodes (Right) -->
+  <g class="pulse-circle" transform-origin="820 130">
+    <circle cx="820" cy="130" r="26" fill="#1e293b" stroke="#f43f5e" stroke-width="1.8" />
+    <text x="820" y="136" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="17" text-anchor="middle" fill="#f43f5e">🚨</text>
+    <text x="820" y="168" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="10" font-weight="600" text-anchor="middle" fill="#94a3b8" letter-spacing="0.5">ALERTS</text>
+  </g>
+
+  <g class="pulse-delay-2" transform-origin="850 270">
+    <circle cx="850" cy="270" r="26" fill="#1e293b" stroke="#fbbf24" stroke-width="1.8" />
+    <text x="850" y="276" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="17" text-anchor="middle" fill="#fbbf24">📱</text>
+    <text x="850" y="308" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="10" font-weight="600" text-anchor="middle" fill="#94a3b8" letter-spacing="0.5">SMS / PUSH</text>
+  </g>
+
+  <g class="pulse-delay-1" transform-origin="980 180">
+    <circle cx="980" cy="180" r="32" fill="#1e293b" stroke="#a855f7" stroke-width="2" />
+    <text x="980" y="186" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="20" text-anchor="middle" fill="#a855f7">📰</text>
+    <text x="980" y="226" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#94a3b8" letter-spacing="1">NEWSLETTERS</text>
+  </g>
+
+  <!-- Central Hub Content -->
+  <g class="float-text" transform="translate(0, 0)">
+    <!-- Pill Badge -->
+    <rect x="450" y="68" width="300" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="468" cy="83" r="4" fill="#34d399">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="595" y="88" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="2">K-12 COMMUNICATION ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="600" y="162" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">
+      Awesome School Communication
+    </text>
+
+    <!-- Subtitle with Gradient -->
+    <text x="600" y="200" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="18" font-weight="600" fill="url(#accent-grad)" text-anchor="middle" letter-spacing="0.5">
+      Family Engagement • Mass Notification • Emergency Broadcasts • Open Source
+    </text>
+
+    <!-- Description -->
+    <text x="600" y="234" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">
+      Curated directory of SaaS suites, open-source protocols, and telephony architecture for modern schools
+    </text>
+
+    <!-- Quick Stats Pills -->
+    <g transform="translate(360, 260)">
+      <rect x="0" y="0" width="140" height="26" rx="13" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="70" y="17" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="10.5" font-weight="600" fill="#38bdf8" text-anchor="middle">⚡ Multi-Channel</text>
+      
+      <rect x="150" y="0" width="160" height="26" rx="13" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="230" y="17" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="10.5" font-weight="600" fill="#a855f7" text-anchor="middle">🌐 150+ Languages</text>
+
+      <rect x="320" y="0" width="160" height="26" rx="13" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="400" y="17" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="10.5" font-weight="600" fill="#34d399" text-anchor="middle">🔒 Self-Hosted Ready</text>
+    </g>
+  </g>
+</svg>
