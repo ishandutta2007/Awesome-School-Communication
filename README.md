@@ -308,6 +308,9 @@ SchoolStatus Connect currently combines mass notifications, two-way messaging, a
 * **[WordPress](https://github.com/WordPress/wordpress-develop)** [![GitHub_Stars](https://img.shields.io/github/stars/WordPress/wordpress-develop?style=social&color=white)](https://github.com/WordPress/wordpress-develop/stargazers)
   Versatile open-source CMS powering school websites, announcement blogs, and classroom newsletters with extensive plugin support.
 
+* **[Parent-Teacher Group Site](https://github.com/trevorfox/parent-teacher-group-site)** [![GitHub_Stars](https://img.shields.io/github/stars/trevorfox/parent-teacher-group-site?style=social&color=white)](https://github.com/trevorfox/parent-teacher-group-site/stargazers)
+  Static website template for a school PTA/PTO/PTC: news posts, programs, meeting minutes, supply lists, and a calendar that merges the school's iCal feed with the group's own events. No server or database; one config file. (MIT)
+
 ---
 
 ## 👥 Open-Source Collaboration Platforms
